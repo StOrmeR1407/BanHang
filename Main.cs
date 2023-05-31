@@ -23,7 +23,7 @@ namespace BanHang
         {
             infohang_pn.Visible = false;
             string connectionString = "Server=StOrmeR;Database=Banhang;Trusted_Connection=True;";
-            string query = "SELECT * FROM MATHANG";
+            string query = "Select mahang as [Mã hàng], tenhang as [Tên hàng], macongty as [Mã công ty], maloaihang as [Mã loại hàng],\r\nsoluong as [Số lượng], donvitinh as [Đơn vị tính], giahang as [Giá hàng] from MATHANG";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -48,13 +48,13 @@ namespace BanHang
                 DataGridViewRow selectedRow = HangHoa_table.SelectedRows[0];
 
                 // Get the values from the selected row
-                string itemID = selectedRow.Cells["mahang"].Value.ToString();
-                string rowName = selectedRow.Cells["tenhang"].Value.ToString();
-                string companyCode = selectedRow.Cells["macongty"].Value.ToString();
-                string itemTypeCode = selectedRow.Cells["maloaihang"].Value.ToString();
-                int quantity = int.Parse(selectedRow.Cells["soluong"].Value.ToString());
-                string unitOfMeasure = selectedRow.Cells["donvitinh"].Value.ToString();
-                int unitPrice = int.Parse(selectedRow.Cells["giahang"].Value.ToString());
+                string itemID = selectedRow.Cells["Mã hàng"].Value.ToString();
+                string rowName = selectedRow.Cells["Tên hàng"].Value.ToString();
+                string companyCode = selectedRow.Cells["Mã công ty"].Value.ToString();
+                string itemTypeCode = selectedRow.Cells["Mã loại hàng"].Value.ToString();
+                int quantity = int.Parse(selectedRow.Cells["Số lượng"].Value.ToString());
+                string unitOfMeasure = selectedRow.Cells["Đơn vị tính"].Value.ToString();
+                int unitPrice = int.Parse(selectedRow.Cells["Giá hàng"].Value.ToString());
 
                 // Update the textboxes with the values
                 mahang_tb.Text = itemID;
@@ -70,6 +70,21 @@ namespace BanHang
         private void Close_infohang_btn_Click(object sender, EventArgs e)
         {
             infohang_pn.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Add_btn1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GiaoDich_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
