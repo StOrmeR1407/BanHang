@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainTab = new System.Windows.Forms.TabControl();
             this.TongQuan = new System.Windows.Forms.TabPage();
             this.HangHoa = new System.Windows.Forms.TabPage();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.Cancel_btn1 = new System.Windows.Forms.Button();
+            this.Optionitem_btn1 = new System.Windows.Forms.Button();
             this.infohang_pn = new System.Windows.Forms.Panel();
             this.Close_infohang_btn = new System.Windows.Forms.Button();
             this.giahang_tb = new System.Windows.Forms.TextBox();
@@ -53,18 +56,6 @@
             this.Search_tb = new System.Windows.Forms.RichTextBox();
             this.HangHoa_table = new System.Windows.Forms.DataGridView();
             this.GiaoDich = new System.Windows.Forms.TabPage();
-            this.DoiTac = new System.Windows.Forms.TabPage();
-            this.NhanVien = new System.Windows.Forms.TabPage();
-            this.Container = new System.Windows.Forms.Panel();
-            this.Delete_btn1 = new System.Windows.Forms.Button();
-            this.Modify_btn1 = new System.Windows.Forms.Button();
-            this.Add_btn1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Search_btn1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -82,6 +73,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.DoiTac = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -104,6 +98,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.NhanVien = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
             this.textBox13 = new System.Windows.Forms.TextBox();
@@ -126,22 +121,33 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
+            this.Container = new System.Windows.Forms.Panel();
+            this.Refresh_btn1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Delete_btn1 = new System.Windows.Forms.Button();
+            this.Modify_btn1 = new System.Windows.Forms.Button();
+            this.Add_btn1 = new System.Windows.Forms.Button();
+            this.Search_btn1 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.macongty_cbb1 = new System.Windows.Forms.ComboBox();
             this.MainTab.SuspendLayout();
             this.HangHoa.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.infohang_pn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HangHoa_table)).BeginInit();
             this.GiaoDich.SuspendLayout();
-            this.DoiTac.SuspendLayout();
-            this.NhanVien.SuspendLayout();
-            this.Container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.DoiTac.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.NhanVien.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.Container.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MainTab
@@ -171,10 +177,12 @@
             // 
             // HangHoa
             // 
+            this.HangHoa.Controls.Add(this.Refresh_btn1);
+            this.HangHoa.Controls.Add(this.panel4);
             this.HangHoa.Controls.Add(this.Delete_btn1);
             this.HangHoa.Controls.Add(this.Modify_btn1);
             this.HangHoa.Controls.Add(this.Add_btn1);
-            this.HangHoa.Controls.Add(this.pictureBox1);
+            this.HangHoa.Controls.Add(this.macongty_tb);
             this.HangHoa.Controls.Add(this.infohang_pn);
             this.HangHoa.Controls.Add(this.Search_btn1);
             this.HangHoa.Controls.Add(this.Search_tb);
@@ -187,14 +195,44 @@
             this.HangHoa.Text = "     Hàng Hoá     ";
             this.HangHoa.UseVisualStyleBackColor = true;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.Cancel_btn1);
+            this.panel4.Controls.Add(this.Optionitem_btn1);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Location = new System.Drawing.Point(6, 619);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(398, 201);
+            this.panel4.TabIndex = 14;
+            // 
+            // Cancel_btn1
+            // 
+            this.Cancel_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cancel_btn1.Location = new System.Drawing.Point(217, 92);
+            this.Cancel_btn1.Name = "Cancel_btn1";
+            this.Cancel_btn1.Size = new System.Drawing.Size(164, 54);
+            this.Cancel_btn1.TabIndex = 15;
+            this.Cancel_btn1.Text = "Cancel";
+            this.Cancel_btn1.UseVisualStyleBackColor = true;
+            // 
+            // Optionitem_btn1
+            // 
+            this.Optionitem_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Optionitem_btn1.Location = new System.Drawing.Point(217, 19);
+            this.Optionitem_btn1.Name = "Optionitem_btn1";
+            this.Optionitem_btn1.Size = new System.Drawing.Size(164, 54);
+            this.Optionitem_btn1.TabIndex = 15;
+            this.Optionitem_btn1.UseVisualStyleBackColor = true;
+            this.Optionitem_btn1.Click += new System.EventHandler(this.Optionitem_btn1_Click);
+            // 
             // infohang_pn
             // 
+            this.infohang_pn.Controls.Add(this.macongty_cbb1);
             this.infohang_pn.Controls.Add(this.Close_infohang_btn);
             this.infohang_pn.Controls.Add(this.giahang_tb);
             this.infohang_pn.Controls.Add(this.donvitinh_tb);
             this.infohang_pn.Controls.Add(this.soluong_tb);
             this.infohang_pn.Controls.Add(this.maloaihang_tb);
-            this.infohang_pn.Controls.Add(this.macongty_tb);
             this.infohang_pn.Controls.Add(this.mahang_tb);
             this.infohang_pn.Controls.Add(this.tenhang_tb);
             this.infohang_pn.Controls.Add(this.label7);
@@ -263,7 +301,7 @@
             // 
             this.macongty_tb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.macongty_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.macongty_tb.Location = new System.Drawing.Point(202, 265);
+            this.macongty_tb.Location = new System.Drawing.Point(575, 348);
             this.macongty_tb.Name = "macongty_tb";
             this.macongty_tb.Size = new System.Drawing.Size(179, 28);
             this.macongty_tb.TabIndex = 15;
@@ -392,142 +430,6 @@
             this.GiaoDich.TabIndex = 2;
             this.GiaoDich.Text = "     Giao Dịch     ";
             this.GiaoDich.UseVisualStyleBackColor = true;
-            this.GiaoDich.Click += new System.EventHandler(this.GiaoDich_Click);
-            // 
-            // DoiTac
-            // 
-            this.DoiTac.Controls.Add(this.panel2);
-            this.DoiTac.Controls.Add(this.dataGridView2);
-            this.DoiTac.Controls.Add(this.button7);
-            this.DoiTac.Controls.Add(this.richTextBox4);
-            this.DoiTac.Controls.Add(this.button8);
-            this.DoiTac.Controls.Add(this.button9);
-            this.DoiTac.Controls.Add(this.button10);
-            this.DoiTac.Location = new System.Drawing.Point(4, 54);
-            this.DoiTac.Name = "DoiTac";
-            this.DoiTac.Size = new System.Drawing.Size(1715, 823);
-            this.DoiTac.TabIndex = 3;
-            this.DoiTac.Text = "     Đối Tác     ";
-            this.DoiTac.UseVisualStyleBackColor = true;
-            // 
-            // NhanVien
-            // 
-            this.NhanVien.BackColor = System.Drawing.Color.White;
-            this.NhanVien.Controls.Add(this.panel3);
-            this.NhanVien.Controls.Add(this.dataGridView3);
-            this.NhanVien.Controls.Add(this.button12);
-            this.NhanVien.Controls.Add(this.richTextBox6);
-            this.NhanVien.Controls.Add(this.button13);
-            this.NhanVien.Controls.Add(this.button14);
-            this.NhanVien.Controls.Add(this.button15);
-            this.NhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NhanVien.Location = new System.Drawing.Point(4, 54);
-            this.NhanVien.Name = "NhanVien";
-            this.NhanVien.Size = new System.Drawing.Size(1715, 823);
-            this.NhanVien.TabIndex = 4;
-            this.NhanVien.Text = "     Nhân Viên     ";
-            // 
-            // Container
-            // 
-            this.Container.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.Container.Controls.Add(this.MainTab);
-            this.Container.Location = new System.Drawing.Point(1, 0);
-            this.Container.Name = "Container";
-            this.Container.Size = new System.Drawing.Size(1745, 927);
-            this.Container.TabIndex = 1;
-            // 
-            // Delete_btn1
-            // 
-            this.Delete_btn1.FlatAppearance.BorderSize = 0;
-            this.Delete_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete_btn1.Image = global::BanHang.Properties.Resources.delete;
-            this.Delete_btn1.Location = new System.Drawing.Point(1503, 6);
-            this.Delete_btn1.Name = "Delete_btn1";
-            this.Delete_btn1.Size = new System.Drawing.Size(70, 70);
-            this.Delete_btn1.TabIndex = 13;
-            this.Delete_btn1.UseVisualStyleBackColor = true;
-            // 
-            // Modify_btn1
-            // 
-            this.Modify_btn1.FlatAppearance.BorderSize = 0;
-            this.Modify_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Modify_btn1.Image = global::BanHang.Properties.Resources.modify;
-            this.Modify_btn1.Location = new System.Drawing.Point(1413, 7);
-            this.Modify_btn1.Name = "Modify_btn1";
-            this.Modify_btn1.Size = new System.Drawing.Size(70, 70);
-            this.Modify_btn1.TabIndex = 12;
-            this.Modify_btn1.UseVisualStyleBackColor = true;
-            // 
-            // Add_btn1
-            // 
-            this.Add_btn1.FlatAppearance.BorderSize = 0;
-            this.Add_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add_btn1.Image = global::BanHang.Properties.Resources.zyro_image__1_;
-            this.Add_btn1.Location = new System.Drawing.Point(1323, 7);
-            this.Add_btn1.Name = "Add_btn1";
-            this.Add_btn1.Size = new System.Drawing.Size(70, 70);
-            this.Add_btn1.TabIndex = 11;
-            this.Add_btn1.UseVisualStyleBackColor = true;
-            this.Add_btn1.Click += new System.EventHandler(this.Add_btn1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BanHang.Properties.Resources.nyan_cat_0__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 619);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 201);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Search_btn1
-            // 
-            this.Search_btn1.FlatAppearance.BorderSize = 0;
-            this.Search_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Search_btn1.Image = global::BanHang.Properties.Resources.search;
-            this.Search_btn1.Location = new System.Drawing.Point(920, 16);
-            this.Search_btn1.Name = "Search_btn1";
-            this.Search_btn1.Size = new System.Drawing.Size(50, 50);
-            this.Search_btn1.TabIndex = 2;
-            this.Search_btn1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::BanHang.Properties.Resources.modify;
-            this.button2.Location = new System.Drawing.Point(1417, 10);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 70);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = global::BanHang.Properties.Resources.delete;
-            this.button3.Location = new System.Drawing.Point(1500, 10);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(70, 70);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(405, 20);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(490, 50);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(924, 20);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(50, 50);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -708,6 +610,39 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1303, 734);
             this.dataGridView1.TabIndex = 8;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(924, 20);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(50, 50);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(405, 20);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(490, 50);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "";
+            // 
+            // DoiTac
+            // 
+            this.DoiTac.Controls.Add(this.panel2);
+            this.DoiTac.Controls.Add(this.dataGridView2);
+            this.DoiTac.Controls.Add(this.button7);
+            this.DoiTac.Controls.Add(this.richTextBox4);
+            this.DoiTac.Controls.Add(this.button8);
+            this.DoiTac.Controls.Add(this.button9);
+            this.DoiTac.Controls.Add(this.button10);
+            this.DoiTac.Location = new System.Drawing.Point(4, 54);
+            this.DoiTac.Name = "DoiTac";
+            this.DoiTac.Size = new System.Drawing.Size(1715, 823);
+            this.DoiTac.TabIndex = 3;
+            this.DoiTac.Text = "     Đối Tác     ";
+            this.DoiTac.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -936,6 +871,23 @@
             this.button10.Text = "button10";
             this.button10.UseVisualStyleBackColor = true;
             // 
+            // NhanVien
+            // 
+            this.NhanVien.BackColor = System.Drawing.Color.White;
+            this.NhanVien.Controls.Add(this.panel3);
+            this.NhanVien.Controls.Add(this.dataGridView3);
+            this.NhanVien.Controls.Add(this.button12);
+            this.NhanVien.Controls.Add(this.richTextBox6);
+            this.NhanVien.Controls.Add(this.button13);
+            this.NhanVien.Controls.Add(this.button14);
+            this.NhanVien.Controls.Add(this.button15);
+            this.NhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NhanVien.Location = new System.Drawing.Point(4, 54);
+            this.NhanVien.Name = "NhanVien";
+            this.NhanVien.Size = new System.Drawing.Size(1715, 823);
+            this.NhanVien.TabIndex = 4;
+            this.NhanVien.Text = "     Nhân Viên     ";
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.button11);
@@ -1107,34 +1059,34 @@
             // 
             // dataGridView3
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView3.GridColor = System.Drawing.Color.White;
             this.dataGridView3.Location = new System.Drawing.Point(408, 82);
             this.dataGridView3.Name = "dataGridView3";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView3.RowHeadersWidth = 62;
             this.dataGridView3.RowTemplate.Height = 28;
             this.dataGridView3.Size = new System.Drawing.Size(1303, 734);
@@ -1187,6 +1139,82 @@
             this.button15.Text = "button15";
             this.button15.UseVisualStyleBackColor = true;
             // 
+            // Container
+            // 
+            this.Container.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Container.Controls.Add(this.MainTab);
+            this.Container.Location = new System.Drawing.Point(1, 0);
+            this.Container.Name = "Container";
+            this.Container.Size = new System.Drawing.Size(1745, 927);
+            this.Container.TabIndex = 1;
+            // 
+            // Refresh_btn1
+            // 
+            this.Refresh_btn1.FlatAppearance.BorderSize = 0;
+            this.Refresh_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Refresh_btn1.Image = global::BanHang.Properties.Resources.refresh;
+            this.Refresh_btn1.Location = new System.Drawing.Point(6, 3);
+            this.Refresh_btn1.Name = "Refresh_btn1";
+            this.Refresh_btn1.Size = new System.Drawing.Size(70, 70);
+            this.Refresh_btn1.TabIndex = 1;
+            this.Refresh_btn1.UseVisualStyleBackColor = true;
+            this.Refresh_btn1.Click += new System.EventHandler(this.Refresh_btn1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BanHang.Properties.Resources.nyan_cat_0__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 201);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Delete_btn1
+            // 
+            this.Delete_btn1.FlatAppearance.BorderSize = 0;
+            this.Delete_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete_btn1.Image = global::BanHang.Properties.Resources.delete;
+            this.Delete_btn1.Location = new System.Drawing.Point(1503, 6);
+            this.Delete_btn1.Name = "Delete_btn1";
+            this.Delete_btn1.Size = new System.Drawing.Size(70, 70);
+            this.Delete_btn1.TabIndex = 13;
+            this.Delete_btn1.UseVisualStyleBackColor = true;
+            // 
+            // Modify_btn1
+            // 
+            this.Modify_btn1.FlatAppearance.BorderSize = 0;
+            this.Modify_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Modify_btn1.Image = global::BanHang.Properties.Resources.modify;
+            this.Modify_btn1.Location = new System.Drawing.Point(1413, 7);
+            this.Modify_btn1.Name = "Modify_btn1";
+            this.Modify_btn1.Size = new System.Drawing.Size(70, 70);
+            this.Modify_btn1.TabIndex = 12;
+            this.Modify_btn1.UseVisualStyleBackColor = true;
+            this.Modify_btn1.Click += new System.EventHandler(this.Modify_btn1_Click);
+            // 
+            // Add_btn1
+            // 
+            this.Add_btn1.FlatAppearance.BorderSize = 0;
+            this.Add_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add_btn1.Image = global::BanHang.Properties.Resources.zyro_image__1_;
+            this.Add_btn1.Location = new System.Drawing.Point(1323, 7);
+            this.Add_btn1.Name = "Add_btn1";
+            this.Add_btn1.Size = new System.Drawing.Size(70, 70);
+            this.Add_btn1.TabIndex = 11;
+            this.Add_btn1.UseVisualStyleBackColor = true;
+            this.Add_btn1.Click += new System.EventHandler(this.Add_btn1_Click);
+            // 
+            // Search_btn1
+            // 
+            this.Search_btn1.FlatAppearance.BorderSize = 0;
+            this.Search_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Search_btn1.Image = global::BanHang.Properties.Resources.search;
+            this.Search_btn1.Location = new System.Drawing.Point(920, 16);
+            this.Search_btn1.Name = "Search_btn1";
+            this.Search_btn1.Size = new System.Drawing.Size(50, 50);
+            this.Search_btn1.TabIndex = 2;
+            this.Search_btn1.UseVisualStyleBackColor = true;
+            // 
             // button1
             // 
             this.button1.FlatAppearance.BorderSize = 0;
@@ -1198,37 +1226,70 @@
             this.button1.TabIndex = 10;
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = global::BanHang.Properties.Resources.delete;
+            this.button3.Location = new System.Drawing.Point(1500, 10);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(70, 70);
+            this.button3.TabIndex = 2;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = global::BanHang.Properties.Resources.modify;
+            this.button2.Location = new System.Drawing.Point(1417, 10);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(70, 70);
+            this.button2.TabIndex = 1;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // macongty_cbb1
+            // 
+            this.macongty_cbb1.FormattingEnabled = true;
+            this.macongty_cbb1.Location = new System.Drawing.Point(202, 264);
+            this.macongty_cbb1.Name = "macongty_cbb1";
+            this.macongty_cbb1.Size = new System.Drawing.Size(179, 37);
+            this.macongty_cbb1.TabIndex = 16;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1747, 926);
             this.Controls.Add(this.Container);
             this.MaximizeBox = false;
             this.Name = "Main";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Main";
             this.Load += new System.EventHandler(this.MainLoad);
             this.MainTab.ResumeLayout(false);
             this.HangHoa.ResumeLayout(false);
+            this.HangHoa.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.infohang_pn.ResumeLayout(false);
             this.infohang_pn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HangHoa_table)).EndInit();
             this.GiaoDich.ResumeLayout(false);
-            this.DoiTac.ResumeLayout(false);
-            this.NhanVien.ResumeLayout(false);
-            this.Container.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.DoiTac.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.NhanVien.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.Container.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1331,5 +1392,10 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button Cancel_btn1;
+        private System.Windows.Forms.Button Optionitem_btn1;
+        private System.Windows.Forms.Button Refresh_btn1;
+        private System.Windows.Forms.ComboBox macongty_cbb1;
     }
 }
