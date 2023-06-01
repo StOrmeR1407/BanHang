@@ -57,6 +57,8 @@
             this.HangHoa_table = new System.Windows.Forms.DataGridView();
             this.GiaoDich = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Cancel_btn2 = new System.Windows.Forms.Button();
+            this.Optionitem_btn2 = new System.Windows.Forms.Button();
             this.infogiaodich_pn = new System.Windows.Forms.Panel();
             this.Close_btn2 = new System.Windows.Forms.Button();
             this.mucgiamgia_tb2 = new System.Windows.Forms.TextBox();
@@ -72,15 +74,15 @@
             this.GiaoDich_table = new System.Windows.Forms.DataGridView();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.DoiTac = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.infodoitac_pn = new System.Windows.Forms.Panel();
+            this.Close_btn3 = new System.Windows.Forms.Button();
+            this.fax_tb3 = new System.Windows.Forms.TextBox();
+            this.dienthoai_tb3 = new System.Windows.Forms.TextBox();
+            this.email_tb3 = new System.Windows.Forms.TextBox();
+            this.diachi_tb3 = new System.Windows.Forms.TextBox();
+            this.tengiaodich_tb3 = new System.Windows.Forms.TextBox();
+            this.makhachhang_tb3 = new System.Windows.Forms.TextBox();
+            this.tencongty_tb3 = new System.Windows.Forms.RichTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -88,15 +90,18 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.DoiTac_table = new System.Windows.Forms.DataGridView();
             this.button7 = new System.Windows.Forms.Button();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.NhanVien = new System.Windows.Forms.TabPage();
             this.infonhanvien_pn = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
+            this.ngaylamviec_dtp = new System.Windows.Forms.DateTimePicker();
+            this.ngaysinh_dtp = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.ten_tb4 = new System.Windows.Forms.TextBox();
+            this.ho_tb4 = new System.Windows.Forms.TextBox();
+            this.Close_btn4 = new System.Windows.Forms.Button();
             this.phucap_tb4 = new System.Windows.Forms.TextBox();
             this.luongcoban_tb4 = new System.Windows.Forms.TextBox();
             this.dienthoai_tb4 = new System.Windows.Forms.TextBox();
@@ -110,17 +115,12 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.NhanVien_table = new System.Windows.Forms.DataGridView();
-            this.button12 = new System.Windows.Forms.Button();
             this.richTextBox6 = new System.Windows.Forms.RichTextBox();
             this.Container = new System.Windows.Forms.Panel();
-            this.Optionitem_btn2 = new System.Windows.Forms.Button();
-            this.Cancel_btn2 = new System.Windows.Forms.Button();
-            this.ho_tb4 = new System.Windows.Forms.TextBox();
-            this.ten_tb4 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.ngaysinh_dtp = new System.Windows.Forms.DateTimePicker();
-            this.ngaylamviec_dtp = new System.Windows.Forms.DateTimePicker();
+            this.Optionitem_btn4 = new System.Windows.Forms.Button();
+            this.Cancel_btn4 = new System.Windows.Forms.Button();
+            this.Optionitem_btn3 = new System.Windows.Forms.Button();
+            this.Cancel_btn3 = new System.Windows.Forms.Button();
             this.Refresh_btn1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Delete_btn1 = new System.Windows.Forms.Button();
@@ -132,8 +132,14 @@
             this.Search_btn2 = new System.Windows.Forms.Button();
             this.Delete_btn2 = new System.Windows.Forms.Button();
             this.Modify_btn2 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.Delete_btn3 = new System.Windows.Forms.Button();
+            this.Modify_btn3 = new System.Windows.Forms.Button();
+            this.Add_btn3 = new System.Windows.Forms.Button();
+            this.Refresh_btn4 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Add_btn4 = new System.Windows.Forms.Button();
+            this.Search_btn4 = new System.Windows.Forms.Button();
             this.Delete_btn4 = new System.Windows.Forms.Button();
             this.Modify_btn4 = new System.Windows.Forms.Button();
             this.MainTab.SuspendLayout();
@@ -146,14 +152,15 @@
             this.infogiaodich_pn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GiaoDich_table)).BeginInit();
             this.DoiTac.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.infodoitac_pn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DoiTac_table)).BeginInit();
             this.NhanVien.SuspendLayout();
             this.infonhanvien_pn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NhanVien_table)).BeginInit();
             this.Container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,7 +171,7 @@
             this.MainTab.Controls.Add(this.GiaoDich);
             this.MainTab.Controls.Add(this.DoiTac);
             this.MainTab.Controls.Add(this.NhanVien);
-            this.MainTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MainTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainTab.ItemSize = new System.Drawing.Size(200, 50);
             this.MainTab.Location = new System.Drawing.Point(11, 33);
             this.MainTab.Name = "MainTab";
@@ -463,6 +470,27 @@
             this.panel1.Size = new System.Drawing.Size(399, 201);
             this.panel1.TabIndex = 11;
             // 
+            // Cancel_btn2
+            // 
+            this.Cancel_btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cancel_btn2.Location = new System.Drawing.Point(218, 100);
+            this.Cancel_btn2.Name = "Cancel_btn2";
+            this.Cancel_btn2.Size = new System.Drawing.Size(164, 54);
+            this.Cancel_btn2.TabIndex = 13;
+            this.Cancel_btn2.Text = "Cancel";
+            this.Cancel_btn2.UseVisualStyleBackColor = true;
+            this.Cancel_btn2.Click += new System.EventHandler(this.Cancel_btn2_Click);
+            // 
+            // Optionitem_btn2
+            // 
+            this.Optionitem_btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Optionitem_btn2.Location = new System.Drawing.Point(218, 26);
+            this.Optionitem_btn2.Name = "Optionitem_btn2";
+            this.Optionitem_btn2.Size = new System.Drawing.Size(164, 54);
+            this.Optionitem_btn2.TabIndex = 12;
+            this.Optionitem_btn2.UseVisualStyleBackColor = true;
+            this.Optionitem_btn2.Click += new System.EventHandler(this.Optionitem_btn2_Click);
+            // 
             // infogiaodich_pn
             // 
             this.infogiaodich_pn.Controls.Add(this.Close_btn2);
@@ -499,54 +527,60 @@
             // 
             this.mucgiamgia_tb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.mucgiamgia_tb2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mucgiamgia_tb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mucgiamgia_tb2.Location = new System.Drawing.Point(202, 250);
             this.mucgiamgia_tb2.Name = "mucgiamgia_tb2";
-            this.mucgiamgia_tb2.Size = new System.Drawing.Size(179, 23);
+            this.mucgiamgia_tb2.Size = new System.Drawing.Size(179, 28);
             this.mucgiamgia_tb2.TabIndex = 18;
             // 
             // soluong_tb2
             // 
             this.soluong_tb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.soluong_tb2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.soluong_tb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.soluong_tb2.Location = new System.Drawing.Point(202, 203);
             this.soluong_tb2.Name = "soluong_tb2";
-            this.soluong_tb2.Size = new System.Drawing.Size(179, 23);
+            this.soluong_tb2.Size = new System.Drawing.Size(179, 28);
             this.soluong_tb2.TabIndex = 17;
             // 
             // giaban_tb2
             // 
             this.giaban_tb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.giaban_tb2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.giaban_tb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.giaban_tb2.Location = new System.Drawing.Point(202, 156);
             this.giaban_tb2.Name = "giaban_tb2";
-            this.giaban_tb2.Size = new System.Drawing.Size(179, 23);
+            this.giaban_tb2.Size = new System.Drawing.Size(179, 28);
             this.giaban_tb2.TabIndex = 16;
             // 
             // mahang_tb2
             // 
             this.mahang_tb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.mahang_tb2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mahang_tb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mahang_tb2.Location = new System.Drawing.Point(202, 109);
             this.mahang_tb2.Name = "mahang_tb2";
-            this.mahang_tb2.Size = new System.Drawing.Size(179, 23);
+            this.mahang_tb2.Size = new System.Drawing.Size(179, 28);
             this.mahang_tb2.TabIndex = 15;
             // 
             // sohoadon_tb2
             // 
             this.sohoadon_tb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.sohoadon_tb2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.sohoadon_tb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sohoadon_tb2.Location = new System.Drawing.Point(202, 60);
             this.sohoadon_tb2.Name = "sohoadon_tb2";
-            this.sohoadon_tb2.Size = new System.Drawing.Size(179, 23);
+            this.sohoadon_tb2.Size = new System.Drawing.Size(179, 28);
             this.sohoadon_tb2.TabIndex = 8;
             // 
             // mucgiamgia_lb2
             // 
             this.mucgiamgia_lb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.mucgiamgia_lb2.AutoSize = true;
+            this.mucgiamgia_lb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mucgiamgia_lb2.Location = new System.Drawing.Point(14, 249);
             this.mucgiamgia_lb2.Name = "mucgiamgia_lb2";
-            this.mucgiamgia_lb2.Size = new System.Drawing.Size(148, 25);
+            this.mucgiamgia_lb2.Size = new System.Drawing.Size(176, 29);
             this.mucgiamgia_lb2.TabIndex = 13;
             this.mucgiamgia_lb2.Text = "Mức Giảm Giá";
             // 
@@ -554,9 +588,10 @@
             // 
             this.soluong_lb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.soluong_lb2.AutoSize = true;
+            this.soluong_lb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.soluong_lb2.Location = new System.Drawing.Point(14, 202);
             this.soluong_lb2.Name = "soluong_lb2";
-            this.soluong_lb2.Size = new System.Drawing.Size(105, 25);
+            this.soluong_lb2.Size = new System.Drawing.Size(124, 29);
             this.soluong_lb2.TabIndex = 12;
             this.soluong_lb2.Text = "Số Lượng";
             // 
@@ -564,9 +599,10 @@
             // 
             this.giaban_lb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.giaban_lb2.AutoSize = true;
+            this.giaban_lb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.giaban_lb2.Location = new System.Drawing.Point(14, 155);
             this.giaban_lb2.Name = "giaban_lb2";
-            this.giaban_lb2.Size = new System.Drawing.Size(89, 25);
+            this.giaban_lb2.Size = new System.Drawing.Size(105, 29);
             this.giaban_lb2.TabIndex = 11;
             this.giaban_lb2.Text = "Giá Bán";
             // 
@@ -574,9 +610,10 @@
             // 
             this.mahang_lb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.mahang_lb2.AutoSize = true;
+            this.mahang_lb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mahang_lb2.Location = new System.Drawing.Point(14, 108);
             this.mahang_lb2.Name = "mahang_lb2";
-            this.mahang_lb2.Size = new System.Drawing.Size(99, 25);
+            this.mahang_lb2.Size = new System.Drawing.Size(116, 29);
             this.mahang_lb2.TabIndex = 10;
             this.mahang_lb2.Text = "Mã Hàng";
             // 
@@ -584,9 +621,10 @@
             // 
             this.Sohoadon_lb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Sohoadon_lb2.AutoSize = true;
+            this.Sohoadon_lb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sohoadon_lb2.Location = new System.Drawing.Point(14, 59);
             this.Sohoadon_lb2.Name = "Sohoadon_lb2";
-            this.Sohoadon_lb2.Size = new System.Drawing.Size(129, 25);
+            this.Sohoadon_lb2.Size = new System.Drawing.Size(153, 29);
             this.Sohoadon_lb2.TabIndex = 8;
             this.Sohoadon_lb2.Text = "Số Hoá Đơn";
             // 
@@ -612,13 +650,16 @@
             // 
             // DoiTac
             // 
-            this.DoiTac.Controls.Add(this.panel2);
-            this.DoiTac.Controls.Add(this.dataGridView2);
+            this.DoiTac.Controls.Add(this.Cancel_btn3);
+            this.DoiTac.Controls.Add(this.Optionitem_btn3);
+            this.DoiTac.Controls.Add(this.pictureBox4);
+            this.DoiTac.Controls.Add(this.infodoitac_pn);
+            this.DoiTac.Controls.Add(this.DoiTac_table);
             this.DoiTac.Controls.Add(this.button7);
             this.DoiTac.Controls.Add(this.richTextBox4);
-            this.DoiTac.Controls.Add(this.button8);
-            this.DoiTac.Controls.Add(this.button9);
-            this.DoiTac.Controls.Add(this.button10);
+            this.DoiTac.Controls.Add(this.Delete_btn3);
+            this.DoiTac.Controls.Add(this.Modify_btn3);
+            this.DoiTac.Controls.Add(this.Add_btn3);
             this.DoiTac.Location = new System.Drawing.Point(4, 54);
             this.DoiTac.Name = "DoiTac";
             this.DoiTac.Size = new System.Drawing.Size(1715, 823);
@@ -626,193 +667,197 @@
             this.DoiTac.Text = "     Đối Tác     ";
             this.DoiTac.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // infodoitac_pn
             // 
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.textBox7);
-            this.panel2.Controls.Add(this.textBox8);
-            this.panel2.Controls.Add(this.textBox9);
-            this.panel2.Controls.Add(this.textBox10);
-            this.panel2.Controls.Add(this.textBox11);
-            this.panel2.Controls.Add(this.textBox12);
-            this.panel2.Controls.Add(this.richTextBox3);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.label21);
-            this.panel2.Location = new System.Drawing.Point(4, 82);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(398, 530);
-            this.panel2.TabIndex = 16;
+            this.infodoitac_pn.Controls.Add(this.Close_btn3);
+            this.infodoitac_pn.Controls.Add(this.fax_tb3);
+            this.infodoitac_pn.Controls.Add(this.dienthoai_tb3);
+            this.infodoitac_pn.Controls.Add(this.email_tb3);
+            this.infodoitac_pn.Controls.Add(this.diachi_tb3);
+            this.infodoitac_pn.Controls.Add(this.tengiaodich_tb3);
+            this.infodoitac_pn.Controls.Add(this.makhachhang_tb3);
+            this.infodoitac_pn.Controls.Add(this.tencongty_tb3);
+            this.infodoitac_pn.Controls.Add(this.label15);
+            this.infodoitac_pn.Controls.Add(this.label16);
+            this.infodoitac_pn.Controls.Add(this.label17);
+            this.infodoitac_pn.Controls.Add(this.label18);
+            this.infodoitac_pn.Controls.Add(this.label19);
+            this.infodoitac_pn.Controls.Add(this.label20);
+            this.infodoitac_pn.Controls.Add(this.label21);
+            this.infodoitac_pn.Location = new System.Drawing.Point(4, 82);
+            this.infodoitac_pn.Name = "infodoitac_pn";
+            this.infodoitac_pn.Size = new System.Drawing.Size(398, 530);
+            this.infodoitac_pn.TabIndex = 16;
             // 
-            // button6
+            // Close_btn3
             // 
-            this.button6.BackColor = System.Drawing.Color.White;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(358, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(37, 40);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "x";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button6.UseVisualStyleBackColor = false;
+            this.Close_btn3.BackColor = System.Drawing.Color.White;
+            this.Close_btn3.FlatAppearance.BorderSize = 0;
+            this.Close_btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Close_btn3.Location = new System.Drawing.Point(358, 3);
+            this.Close_btn3.Name = "Close_btn3";
+            this.Close_btn3.Size = new System.Drawing.Size(37, 40);
+            this.Close_btn3.TabIndex = 8;
+            this.Close_btn3.Text = "x";
+            this.Close_btn3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.Close_btn3.UseVisualStyleBackColor = false;
+            this.Close_btn3.Click += new System.EventHandler(this.Close_btn3_Click);
             // 
-            // textBox7
+            // fax_tb3
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Location = new System.Drawing.Point(202, 453);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(179, 23);
-            this.textBox7.TabIndex = 19;
+            this.fax_tb3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.fax_tb3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.fax_tb3.Location = new System.Drawing.Point(202, 453);
+            this.fax_tb3.Name = "fax_tb3";
+            this.fax_tb3.Size = new System.Drawing.Size(179, 28);
+            this.fax_tb3.TabIndex = 19;
             // 
-            // textBox8
+            // dienthoai_tb3
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Location = new System.Drawing.Point(202, 406);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(179, 23);
-            this.textBox8.TabIndex = 18;
+            this.dienthoai_tb3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.dienthoai_tb3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dienthoai_tb3.Location = new System.Drawing.Point(202, 406);
+            this.dienthoai_tb3.Name = "dienthoai_tb3";
+            this.dienthoai_tb3.Size = new System.Drawing.Size(179, 28);
+            this.dienthoai_tb3.TabIndex = 18;
             // 
-            // textBox9
+            // email_tb3
             // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Location = new System.Drawing.Point(202, 359);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(179, 23);
-            this.textBox9.TabIndex = 17;
+            this.email_tb3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.email_tb3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.email_tb3.Location = new System.Drawing.Point(202, 359);
+            this.email_tb3.Name = "email_tb3";
+            this.email_tb3.Size = new System.Drawing.Size(179, 28);
+            this.email_tb3.TabIndex = 17;
             // 
-            // textBox10
+            // diachi_tb3
             // 
-            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Location = new System.Drawing.Point(202, 312);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(179, 23);
-            this.textBox10.TabIndex = 16;
+            this.diachi_tb3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.diachi_tb3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.diachi_tb3.Location = new System.Drawing.Point(202, 312);
+            this.diachi_tb3.Name = "diachi_tb3";
+            this.diachi_tb3.Size = new System.Drawing.Size(179, 28);
+            this.diachi_tb3.TabIndex = 16;
             // 
-            // textBox11
+            // tengiaodich_tb3
             // 
-            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Location = new System.Drawing.Point(202, 265);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(179, 23);
-            this.textBox11.TabIndex = 15;
+            this.tengiaodich_tb3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tengiaodich_tb3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tengiaodich_tb3.Location = new System.Drawing.Point(202, 265);
+            this.tengiaodich_tb3.Name = "tengiaodich_tb3";
+            this.tengiaodich_tb3.Size = new System.Drawing.Size(179, 28);
+            this.tengiaodich_tb3.TabIndex = 15;
             // 
-            // textBox12
+            // makhachhang_tb3
             // 
-            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Location = new System.Drawing.Point(202, 60);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(179, 23);
-            this.textBox12.TabIndex = 8;
+            this.makhachhang_tb3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.makhachhang_tb3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.makhachhang_tb3.Location = new System.Drawing.Point(202, 60);
+            this.makhachhang_tb3.Name = "makhachhang_tb3";
+            this.makhachhang_tb3.Size = new System.Drawing.Size(179, 28);
+            this.makhachhang_tb3.TabIndex = 8;
             // 
-            // richTextBox3
+            // tencongty_tb3
             // 
-            this.richTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox3.Location = new System.Drawing.Point(19, 145);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(362, 83);
-            this.richTextBox3.TabIndex = 8;
-            this.richTextBox3.Text = "";
+            this.tencongty_tb3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tencongty_tb3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tencongty_tb3.Location = new System.Drawing.Point(7, 145);
+            this.tencongty_tb3.Name = "tencongty_tb3";
+            this.tencongty_tb3.Size = new System.Drawing.Size(362, 83);
+            this.tencongty_tb3.TabIndex = 8;
+            this.tencongty_tb3.Text = "";
             // 
             // label15
             // 
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(14, 452);
+            this.label15.Location = new System.Drawing.Point(2, 452);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(102, 25);
+            this.label15.Size = new System.Drawing.Size(55, 29);
             this.label15.TabIndex = 14;
-            this.label15.Text = "Giá Hàng";
+            this.label15.Text = "Fax";
             // 
             // label16
             // 
             this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(14, 405);
+            this.label16.Location = new System.Drawing.Point(2, 405);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(114, 25);
+            this.label16.Size = new System.Drawing.Size(141, 29);
             this.label16.TabIndex = 13;
-            this.label16.Text = "Đơn vị tính";
+            this.label16.Text = "Điện Thoại";
             // 
             // label17
             // 
             this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(14, 358);
+            this.label17.Location = new System.Drawing.Point(2, 358);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(105, 25);
+            this.label17.Size = new System.Drawing.Size(79, 29);
             this.label17.TabIndex = 12;
-            this.label17.Text = "Số Lượng";
+            this.label17.Text = "Email";
             // 
             // label18
             // 
             this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(14, 311);
+            this.label18.Location = new System.Drawing.Point(2, 311);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(146, 25);
+            this.label18.Size = new System.Drawing.Size(98, 29);
             this.label18.TabIndex = 11;
-            this.label18.Text = "Mã Loại Hàng";
+            this.label18.Text = "Địa Chỉ";
             // 
             // label19
             // 
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(14, 264);
+            this.label19.Location = new System.Drawing.Point(2, 264);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(131, 25);
+            this.label19.Size = new System.Drawing.Size(180, 29);
             this.label19.TabIndex = 10;
-            this.label19.Text = "Mã Công Ty";
+            this.label19.Text = "Tên Giao Dịch";
             // 
             // label20
             // 
             this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(14, 103);
+            this.label20.Location = new System.Drawing.Point(2, 103);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(107, 25);
+            this.label20.Size = new System.Drawing.Size(154, 29);
             this.label20.TabIndex = 9;
-            this.label20.Text = "Tên Hàng";
+            this.label20.Text = "Tên Công ty";
             // 
             // label21
             // 
             this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(14, 59);
+            this.label21.Location = new System.Drawing.Point(2, 59);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(99, 25);
+            this.label21.Size = new System.Drawing.Size(195, 29);
             this.label21.TabIndex = 8;
-            this.label21.Text = "Mã Hàng";
+            this.label21.Text = "Mã Khách Hàng";
             // 
-            // dataGridView2
+            // DoiTac_table
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.GridColor = System.Drawing.Color.White;
-            this.dataGridView2.Location = new System.Drawing.Point(408, 82);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 62;
-            this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(1303, 734);
-            this.dataGridView2.TabIndex = 15;
+            this.DoiTac_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DoiTac_table.GridColor = System.Drawing.Color.White;
+            this.DoiTac_table.Location = new System.Drawing.Point(408, 82);
+            this.DoiTac_table.Name = "DoiTac_table";
+            this.DoiTac_table.RowHeadersWidth = 62;
+            this.DoiTac_table.RowTemplate.Height = 28;
+            this.DoiTac_table.Size = new System.Drawing.Size(1303, 734);
+            this.DoiTac_table.TabIndex = 15;
+            this.DoiTac_table.SelectionChanged += new System.EventHandler(this.DoiTac_table_SelectionChanged);
             // 
             // button7
             // 
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Image = global::BanHang.Properties.Resources.search;
             this.button7.Location = new System.Drawing.Point(924, 16);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(50, 50);
             this.button7.TabIndex = 14;
-            this.button7.Text = "button7";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // richTextBox4
@@ -823,45 +868,18 @@
             this.richTextBox4.TabIndex = 13;
             this.richTextBox4.Text = "";
             // 
-            // button8
-            // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(1500, 6);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(70, 70);
-            this.button8.TabIndex = 12;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(1410, 6);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(70, 70);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(1312, 6);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(70, 70);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
             // NhanVien
             // 
             this.NhanVien.BackColor = System.Drawing.Color.White;
-            this.NhanVien.Controls.Add(this.pictureBox3);
-            this.NhanVien.Controls.Add(this.Add_btn4);
+            this.NhanVien.Controls.Add(this.Refresh_btn4);
+            this.NhanVien.Controls.Add(this.Cancel_btn4);
+            this.NhanVien.Controls.Add(this.Optionitem_btn4);
             this.NhanVien.Controls.Add(this.infonhanvien_pn);
             this.NhanVien.Controls.Add(this.NhanVien_table);
-            this.NhanVien.Controls.Add(this.button12);
             this.NhanVien.Controls.Add(this.richTextBox6);
+            this.NhanVien.Controls.Add(this.pictureBox3);
+            this.NhanVien.Controls.Add(this.Add_btn4);
+            this.NhanVien.Controls.Add(this.Search_btn4);
             this.NhanVien.Controls.Add(this.Delete_btn4);
             this.NhanVien.Controls.Add(this.Modify_btn4);
             this.NhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -879,7 +897,7 @@
             this.infonhanvien_pn.Controls.Add(this.label8);
             this.infonhanvien_pn.Controls.Add(this.ten_tb4);
             this.infonhanvien_pn.Controls.Add(this.ho_tb4);
-            this.infonhanvien_pn.Controls.Add(this.button11);
+            this.infonhanvien_pn.Controls.Add(this.Close_btn4);
             this.infonhanvien_pn.Controls.Add(this.phucap_tb4);
             this.infonhanvien_pn.Controls.Add(this.luongcoban_tb4);
             this.infonhanvien_pn.Controls.Add(this.dienthoai_tb4);
@@ -898,18 +916,69 @@
             this.infonhanvien_pn.Size = new System.Drawing.Size(398, 530);
             this.infonhanvien_pn.TabIndex = 16;
             // 
-            // button11
+            // ngaylamviec_dtp
             // 
-            this.button11.BackColor = System.Drawing.Color.White;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(358, 3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(37, 40);
-            this.button11.TabIndex = 8;
-            this.button11.Text = "x";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button11.UseVisualStyleBackColor = false;
+            this.ngaylamviec_dtp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ngaylamviec_dtp.Location = new System.Drawing.Point(202, 249);
+            this.ngaylamviec_dtp.Name = "ngaylamviec_dtp";
+            this.ngaylamviec_dtp.Size = new System.Drawing.Size(179, 30);
+            this.ngaylamviec_dtp.TabIndex = 20;
+            // 
+            // ngaysinh_dtp
+            // 
+            this.ngaysinh_dtp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ngaysinh_dtp.Location = new System.Drawing.Point(181, 200);
+            this.ngaysinh_dtp.Name = "ngaysinh_dtp";
+            this.ngaysinh_dtp.Size = new System.Drawing.Size(200, 30);
+            this.ngaysinh_dtp.TabIndex = 18;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(16, 206);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(132, 29);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Ngày Sinh";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(16, 157);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(59, 29);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Tên";
+            // 
+            // ten_tb4
+            // 
+            this.ten_tb4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ten_tb4.Location = new System.Drawing.Point(202, 154);
+            this.ten_tb4.Name = "ten_tb4";
+            this.ten_tb4.Size = new System.Drawing.Size(179, 28);
+            this.ten_tb4.TabIndex = 18;
+            // 
+            // ho_tb4
+            // 
+            this.ho_tb4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ho_tb4.Location = new System.Drawing.Point(202, 107);
+            this.ho_tb4.Name = "ho_tb4";
+            this.ho_tb4.Size = new System.Drawing.Size(179, 28);
+            this.ho_tb4.TabIndex = 18;
+            // 
+            // Close_btn4
+            // 
+            this.Close_btn4.BackColor = System.Drawing.Color.White;
+            this.Close_btn4.FlatAppearance.BorderSize = 0;
+            this.Close_btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Close_btn4.Location = new System.Drawing.Point(358, 3);
+            this.Close_btn4.Name = "Close_btn4";
+            this.Close_btn4.Size = new System.Drawing.Size(37, 40);
+            this.Close_btn4.TabIndex = 8;
+            this.Close_btn4.Text = "x";
+            this.Close_btn4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.Close_btn4.UseVisualStyleBackColor = false;
+            this.Close_btn4.Click += new System.EventHandler(this.Close_btn4_Click);
             // 
             // phucap_tb4
             // 
@@ -1062,15 +1131,6 @@
             this.NhanVien_table.TabIndex = 15;
             this.NhanVien_table.SelectionChanged += new System.EventHandler(this.NhanVien_table_SelectionChanged);
             // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(924, 16);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(50, 50);
-            this.button12.TabIndex = 14;
-            this.button12.Text = "button12";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
             // richTextBox6
             // 
             this.richTextBox6.Location = new System.Drawing.Point(405, 16);
@@ -1088,78 +1148,51 @@
             this.Container.Size = new System.Drawing.Size(1745, 927);
             this.Container.TabIndex = 1;
             // 
-            // Optionitem_btn2
+            // Optionitem_btn4
             // 
-            this.Optionitem_btn2.FlatAppearance.BorderSize = 0;
-            this.Optionitem_btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Optionitem_btn2.Location = new System.Drawing.Point(218, 26);
-            this.Optionitem_btn2.Name = "Optionitem_btn2";
-            this.Optionitem_btn2.Size = new System.Drawing.Size(164, 54);
-            this.Optionitem_btn2.TabIndex = 12;
-            this.Optionitem_btn2.UseVisualStyleBackColor = true;
-            this.Optionitem_btn2.Click += new System.EventHandler(this.Optionitem_btn2_Click);
+            this.Optionitem_btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Optionitem_btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Optionitem_btn4.Location = new System.Drawing.Point(221, 636);
+            this.Optionitem_btn4.Name = "Optionitem_btn4";
+            this.Optionitem_btn4.Size = new System.Drawing.Size(164, 54);
+            this.Optionitem_btn4.TabIndex = 19;
+            this.Optionitem_btn4.UseVisualStyleBackColor = true;
+            this.Optionitem_btn4.Click += new System.EventHandler(this.Optionitem_btn4_Click);
             // 
-            // Cancel_btn2
+            // Cancel_btn4
             // 
-            this.Cancel_btn2.FlatAppearance.BorderSize = 0;
-            this.Cancel_btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cancel_btn2.Location = new System.Drawing.Point(218, 100);
-            this.Cancel_btn2.Name = "Cancel_btn2";
-            this.Cancel_btn2.Size = new System.Drawing.Size(164, 54);
-            this.Cancel_btn2.TabIndex = 13;
-            this.Cancel_btn2.Text = "Cancel";
-            this.Cancel_btn2.UseVisualStyleBackColor = true;
-            this.Cancel_btn2.Click += new System.EventHandler(this.Cancel_btn2_Click);
+            this.Cancel_btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cancel_btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancel_btn4.Location = new System.Drawing.Point(221, 716);
+            this.Cancel_btn4.Name = "Cancel_btn4";
+            this.Cancel_btn4.Size = new System.Drawing.Size(164, 54);
+            this.Cancel_btn4.TabIndex = 20;
+            this.Cancel_btn4.Text = "Cancel";
+            this.Cancel_btn4.UseVisualStyleBackColor = true;
+            this.Cancel_btn4.Click += new System.EventHandler(this.Cancel_btn4_Click);
             // 
-            // ho_tb4
+            // Optionitem_btn3
             // 
-            this.ho_tb4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ho_tb4.Location = new System.Drawing.Point(202, 107);
-            this.ho_tb4.Name = "ho_tb4";
-            this.ho_tb4.Size = new System.Drawing.Size(179, 28);
-            this.ho_tb4.TabIndex = 18;
+            this.Optionitem_btn3.FlatAppearance.BorderSize = 0;
+            this.Optionitem_btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Optionitem_btn3.Location = new System.Drawing.Point(221, 643);
+            this.Optionitem_btn3.Name = "Optionitem_btn3";
+            this.Optionitem_btn3.Size = new System.Drawing.Size(164, 54);
+            this.Optionitem_btn3.TabIndex = 18;
+            this.Optionitem_btn3.UseVisualStyleBackColor = true;
+            this.Optionitem_btn3.Click += new System.EventHandler(this.Optionitem_btn3_Click);
             // 
-            // ten_tb4
+            // Cancel_btn3
             // 
-            this.ten_tb4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ten_tb4.Location = new System.Drawing.Point(202, 154);
-            this.ten_tb4.Name = "ten_tb4";
-            this.ten_tb4.Size = new System.Drawing.Size(179, 28);
-            this.ten_tb4.TabIndex = 18;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(16, 157);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 29);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Tên";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(16, 206);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(132, 29);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Ngày Sinh";
-            // 
-            // ngaysinh_dtp
-            // 
-            this.ngaysinh_dtp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ngaysinh_dtp.Location = new System.Drawing.Point(181, 200);
-            this.ngaysinh_dtp.Name = "ngaysinh_dtp";
-            this.ngaysinh_dtp.Size = new System.Drawing.Size(200, 30);
-            this.ngaysinh_dtp.TabIndex = 18;
-            // 
-            // ngaylamviec_dtp
-            // 
-            this.ngaylamviec_dtp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ngaylamviec_dtp.Location = new System.Drawing.Point(202, 249);
-            this.ngaylamviec_dtp.Name = "ngaylamviec_dtp";
-            this.ngaylamviec_dtp.Size = new System.Drawing.Size(179, 30);
-            this.ngaylamviec_dtp.TabIndex = 20;
+            this.Cancel_btn3.FlatAppearance.BorderSize = 0;
+            this.Cancel_btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cancel_btn3.Location = new System.Drawing.Point(221, 727);
+            this.Cancel_btn3.Name = "Cancel_btn3";
+            this.Cancel_btn3.Size = new System.Drawing.Size(164, 54);
+            this.Cancel_btn3.TabIndex = 19;
+            this.Cancel_btn3.Text = "Cancel";
+            this.Cancel_btn3.UseVisualStyleBackColor = true;
+            this.Cancel_btn3.Click += new System.EventHandler(this.Cancel_btn3_Click);
             // 
             // Refresh_btn1
             // 
@@ -1249,6 +1282,7 @@
             this.Add_btn2.Size = new System.Drawing.Size(70, 70);
             this.Add_btn2.TabIndex = 10;
             this.Add_btn2.UseVisualStyleBackColor = true;
+            this.Add_btn2.Click += new System.EventHandler(this.Add_btn2_Click);
             // 
             // Search_btn2
             // 
@@ -1285,6 +1319,63 @@
             this.Modify_btn2.UseVisualStyleBackColor = true;
             this.Modify_btn2.Click += new System.EventHandler(this.Modify_btn2_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::BanHang.Properties.Resources.nyan_cat_11;
+            this.pictureBox4.Location = new System.Drawing.Point(4, 618);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox4.TabIndex = 17;
+            this.pictureBox4.TabStop = false;
+            // 
+            // Delete_btn3
+            // 
+            this.Delete_btn3.FlatAppearance.BorderSize = 0;
+            this.Delete_btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete_btn3.Image = global::BanHang.Properties.Resources.delete;
+            this.Delete_btn3.Location = new System.Drawing.Point(1500, 6);
+            this.Delete_btn3.Name = "Delete_btn3";
+            this.Delete_btn3.Size = new System.Drawing.Size(70, 70);
+            this.Delete_btn3.TabIndex = 12;
+            this.Delete_btn3.UseVisualStyleBackColor = true;
+            this.Delete_btn3.Click += new System.EventHandler(this.Delete_btn3_Click);
+            // 
+            // Modify_btn3
+            // 
+            this.Modify_btn3.FlatAppearance.BorderSize = 0;
+            this.Modify_btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Modify_btn3.Image = global::BanHang.Properties.Resources.modify;
+            this.Modify_btn3.Location = new System.Drawing.Point(1410, 6);
+            this.Modify_btn3.Name = "Modify_btn3";
+            this.Modify_btn3.Size = new System.Drawing.Size(70, 70);
+            this.Modify_btn3.TabIndex = 11;
+            this.Modify_btn3.UseVisualStyleBackColor = true;
+            this.Modify_btn3.Click += new System.EventHandler(this.Modify_btn3_Click);
+            // 
+            // Add_btn3
+            // 
+            this.Add_btn3.FlatAppearance.BorderSize = 0;
+            this.Add_btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add_btn3.Image = global::BanHang.Properties.Resources.zyro_image__1_;
+            this.Add_btn3.Location = new System.Drawing.Point(1312, 6);
+            this.Add_btn3.Name = "Add_btn3";
+            this.Add_btn3.Size = new System.Drawing.Size(70, 70);
+            this.Add_btn3.TabIndex = 10;
+            this.Add_btn3.UseVisualStyleBackColor = true;
+            this.Add_btn3.Click += new System.EventHandler(this.Add_btn3_Click);
+            // 
+            // Refresh_btn4
+            // 
+            this.Refresh_btn4.FlatAppearance.BorderSize = 0;
+            this.Refresh_btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Refresh_btn4.Image = global::BanHang.Properties.Resources.refresh;
+            this.Refresh_btn4.Location = new System.Drawing.Point(9, 6);
+            this.Refresh_btn4.Name = "Refresh_btn4";
+            this.Refresh_btn4.Size = new System.Drawing.Size(70, 70);
+            this.Refresh_btn4.TabIndex = 21;
+            this.Refresh_btn4.UseVisualStyleBackColor = true;
+            this.Refresh_btn4.Click += new System.EventHandler(this.Refresh_btn4_Click);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::BanHang.Properties.Resources.nyan_cat_3;
@@ -1304,6 +1395,18 @@
             this.Add_btn4.Size = new System.Drawing.Size(70, 70);
             this.Add_btn4.TabIndex = 17;
             this.Add_btn4.UseVisualStyleBackColor = true;
+            this.Add_btn4.Click += new System.EventHandler(this.Add_btn4_Click);
+            // 
+            // Search_btn4
+            // 
+            this.Search_btn4.FlatAppearance.BorderSize = 0;
+            this.Search_btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Search_btn4.Image = global::BanHang.Properties.Resources.search;
+            this.Search_btn4.Location = new System.Drawing.Point(924, 16);
+            this.Search_btn4.Name = "Search_btn4";
+            this.Search_btn4.Size = new System.Drawing.Size(50, 50);
+            this.Search_btn4.TabIndex = 14;
+            this.Search_btn4.UseVisualStyleBackColor = true;
             // 
             // Delete_btn4
             // 
@@ -1315,6 +1418,7 @@
             this.Delete_btn4.Size = new System.Drawing.Size(70, 70);
             this.Delete_btn4.TabIndex = 12;
             this.Delete_btn4.UseVisualStyleBackColor = true;
+            this.Delete_btn4.Click += new System.EventHandler(this.Delete_btn4_Click);
             // 
             // Modify_btn4
             // 
@@ -1326,6 +1430,7 @@
             this.Modify_btn4.Size = new System.Drawing.Size(70, 70);
             this.Modify_btn4.TabIndex = 11;
             this.Modify_btn4.UseVisualStyleBackColor = true;
+            this.Modify_btn4.Click += new System.EventHandler(this.Modify_btn4_Click);
             // 
             // Main
             // 
@@ -1352,9 +1457,9 @@
             this.infogiaodich_pn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GiaoDich_table)).EndInit();
             this.DoiTac.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.infodoitac_pn.ResumeLayout(false);
+            this.infodoitac_pn.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DoiTac_table)).EndInit();
             this.NhanVien.ResumeLayout(false);
             this.infonhanvien_pn.ResumeLayout(false);
             this.infonhanvien_pn.PerformLayout();
@@ -1362,6 +1467,7 @@
             this.Container.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
@@ -1417,15 +1523,15 @@
         private System.Windows.Forms.Label mahang_lb2;
         private System.Windows.Forms.Label Sohoadon_lb2;
         private System.Windows.Forms.DataGridView GiaoDich_table;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.Panel infodoitac_pn;
+        private System.Windows.Forms.Button Close_btn3;
+        private System.Windows.Forms.TextBox fax_tb3;
+        private System.Windows.Forms.TextBox dienthoai_tb3;
+        private System.Windows.Forms.TextBox email_tb3;
+        private System.Windows.Forms.TextBox diachi_tb3;
+        private System.Windows.Forms.TextBox tengiaodich_tb3;
+        private System.Windows.Forms.TextBox makhachhang_tb3;
+        private System.Windows.Forms.RichTextBox tencongty_tb3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
@@ -1433,14 +1539,14 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView DoiTac_table;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button Delete_btn3;
+        private System.Windows.Forms.Button Modify_btn3;
+        private System.Windows.Forms.Button Add_btn3;
         private System.Windows.Forms.Panel infonhanvien_pn;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button Close_btn4;
         private System.Windows.Forms.TextBox phucap_tb4;
         private System.Windows.Forms.TextBox luongcoban_tb4;
         private System.Windows.Forms.TextBox dienthoai_tb4;
@@ -1454,7 +1560,7 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.DataGridView NhanVien_table;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button Search_btn4;
         private System.Windows.Forms.RichTextBox richTextBox6;
         private System.Windows.Forms.Button Delete_btn4;
         private System.Windows.Forms.Button Modify_btn4;
@@ -1474,5 +1580,11 @@
         private System.Windows.Forms.DateTimePicker ngaylamviec_dtp;
         private System.Windows.Forms.DateTimePicker ngaysinh_dtp;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button Cancel_btn4;
+        private System.Windows.Forms.Button Optionitem_btn4;
+        private System.Windows.Forms.Button Refresh_btn4;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button Optionitem_btn3;
+        private System.Windows.Forms.Button Cancel_btn3;
     }
 }
