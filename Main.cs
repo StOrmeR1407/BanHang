@@ -21,7 +21,7 @@ namespace BanHang
 
         private void MainLoad(object sender, EventArgs e)
         {
-            infohang_pn.Visible = false;
+            infohanghoa_pn.Visible = false;
             Optionitem_btn1.Visible = false;
             Cancel_btn1.Visible = false;
             string connectionString = "Server=StOrmeR;Database=Banhang;Trusted_Connection=True;";
@@ -40,13 +40,29 @@ namespace BanHang
                     HangHoa_table.DataSource = dataTable;
                 }
             }
+
+            string query1 = "Select sohoadon as [Số hoá đơn], mahang as [Mã hàng], soluong as [Số lượng], giaban as [Giá bán], mucgiamgia as [Mức giảm giá] from CHITIETDATHANG";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand(query1, connection))
+                {
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
+                    dataAdapter.Fill(dataTable);
+
+                    GiaoDich_table.DataSource = dataTable;
+                }
+            }
         }
 
         private void HangHoa_table_SelectionChanged(object sender, EventArgs e)
         {
             if (HangHoa_table.SelectedRows.Count > 0)
             {
-                infohang_pn.Visible = true;
+                infohanghoa_pn.Visible = true;
                 DataGridViewRow selectedRow = HangHoa_table.SelectedRows[0];
 
                 // Get the values from the selected row
@@ -71,7 +87,7 @@ namespace BanHang
 
         private void Close_infohang_btn_Click(object sender, EventArgs e)
         {
-            infohang_pn.Visible = false;
+            infohanghoa_pn.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -138,7 +154,6 @@ namespace BanHang
                         int quantity = int.Parse(soluong_tb.Text);
                         string unitOfMeasure = donvitinh_tb.Text;
                         int unitPrice = int.Parse(giahang_tb.Text);
-                        string cbb = macongty_cbb1.SelectedItem.ToString();
 
                         // Update the corresponding values in the selected row
                         HangHoa_table.Rows[rowIndex].Cells["Mã hàng"].Value = itemID;
@@ -187,6 +202,68 @@ namespace BanHang
 
                     HangHoa_table.DataSource = dataTable;
                 }
+            }
+        }
+
+        private void Cancel_btn1_Click(object sender, EventArgs e)
+        {           
+            mahang_tb.Text = "";
+            tenhang_tb.Text = "";
+            macongty_tb.Text = "";
+            maloaihang_tb.Text = "";
+            soluong_tb.Text = "";
+            donvitinh_tb.Text = "";
+            giahang_tb.Text = "";
+            infohanghoa_pn.Visible = false;
+            Optionitem_btn1.Visible = false;
+            Cancel_btn1.Visible = false;
+        }
+
+        private void Delete_btn1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void DeleteDataFromDatabase(string primaryKeyValue)
+        {
+            string connectionString = "Server=StOrmeR;Database=Banhang;Trusted_Connection=True;";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // Open the connection
+                connection.Open();
+
+                // Create a SQL command to delete the row with the specified primary key
+                string sql = "DELETE FROM MATHANG WHERE mahang = @PrimaryKeyValue";
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    // Set the value of the primary key parameter
+                    command.Parameters.AddWithValue("@PrimaryKeyValue", primaryKeyValue);
+
+                    // Execute the SQL command
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        private void GiaoDich_table_SelectionChanged(object sender, EventArgs e)
+        {
+            if (GiaoDich_table.SelectedRows.Count > 0)
+            {
+                infohanghoa_pn.Visible = true;
+                DataGridViewRow selectedRow = GiaoDich_table.SelectedRows[0];
+
+                // Get the values from the selected row
+                string sohoadon = selectedRow.Cells["Số hoá đơn"].Value.ToString();
+                string mahang = selectedRow.Cells["Mã hàng"].Value.ToString();
+                string giaban = selectedRow.Cells["Giá bán"].Value.ToString();
+                string soluong = selectedRow.Cells["Số lượng"].Value.ToString();              
+                string mucgiamgia = selectedRow.Cells["Mức giảm giá"].Value.ToString();
+
+                // Update the textboxes with the values
+                sohoadon_tb2.Text = sohoadon;
+                mahang_tb2.Text = mahang;
+                giaban_tb2.Text = giaban;
+                soluong_tb2.Text = soluong;
+                mucgiamgia_tb2.Text = mucgiamgia;
             }
         }
     }

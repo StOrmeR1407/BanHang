@@ -34,10 +34,15 @@
             this.MainTab = new System.Windows.Forms.TabControl();
             this.TongQuan = new System.Windows.Forms.TabPage();
             this.HangHoa = new System.Windows.Forms.TabPage();
+            this.Refresh_btn1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Cancel_btn1 = new System.Windows.Forms.Button();
             this.Optionitem_btn1 = new System.Windows.Forms.Button();
-            this.infohang_pn = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Delete_btn1 = new System.Windows.Forms.Button();
+            this.Modify_btn1 = new System.Windows.Forms.Button();
+            this.Add_btn1 = new System.Windows.Forms.Button();
+            this.infohanghoa_pn = new System.Windows.Forms.Panel();
             this.Close_infohang_btn = new System.Windows.Forms.Button();
             this.giahang_tb = new System.Windows.Forms.TextBox();
             this.donvitinh_tb = new System.Windows.Forms.TextBox();
@@ -53,28 +58,28 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Search_btn1 = new System.Windows.Forms.Button();
             this.Search_tb = new System.Windows.Forms.RichTextBox();
             this.HangHoa_table = new System.Windows.Forms.DataGridView();
             this.GiaoDich = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.infogiaodich_pn = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.mucgiamgia_tb2 = new System.Windows.Forms.TextBox();
+            this.soluong_tb2 = new System.Windows.Forms.TextBox();
+            this.giaban_tb2 = new System.Windows.Forms.TextBox();
+            this.mahang_tb2 = new System.Windows.Forms.TextBox();
+            this.sohoadon_tb2 = new System.Windows.Forms.TextBox();
+            this.mucgiamgia_lb2 = new System.Windows.Forms.Label();
+            this.soluong_lb2 = new System.Windows.Forms.Label();
+            this.giaban_lb2 = new System.Windows.Forms.Label();
+            this.mahang_lb2 = new System.Windows.Forms.Label();
+            this.Sohoadon_lb2 = new System.Windows.Forms.Label();
+            this.GiaoDich_table = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.DoiTac = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
@@ -122,24 +127,15 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.Container = new System.Windows.Forms.Panel();
-            this.Refresh_btn1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Delete_btn1 = new System.Windows.Forms.Button();
-            this.Modify_btn1 = new System.Windows.Forms.Button();
-            this.Add_btn1 = new System.Windows.Forms.Button();
-            this.Search_btn1 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.macongty_cbb1 = new System.Windows.Forms.ComboBox();
             this.MainTab.SuspendLayout();
             this.HangHoa.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.infohang_pn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.infohanghoa_pn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HangHoa_table)).BeginInit();
             this.GiaoDich.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.infogiaodich_pn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GiaoDich_table)).BeginInit();
             this.DoiTac.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -147,7 +143,6 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.Container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MainTab
@@ -182,8 +177,7 @@
             this.HangHoa.Controls.Add(this.Delete_btn1);
             this.HangHoa.Controls.Add(this.Modify_btn1);
             this.HangHoa.Controls.Add(this.Add_btn1);
-            this.HangHoa.Controls.Add(this.macongty_tb);
-            this.HangHoa.Controls.Add(this.infohang_pn);
+            this.HangHoa.Controls.Add(this.infohanghoa_pn);
             this.HangHoa.Controls.Add(this.Search_btn1);
             this.HangHoa.Controls.Add(this.Search_tb);
             this.HangHoa.Controls.Add(this.HangHoa_table);
@@ -194,6 +188,18 @@
             this.HangHoa.TabIndex = 1;
             this.HangHoa.Text = "     Hàng Hoá     ";
             this.HangHoa.UseVisualStyleBackColor = true;
+            // 
+            // Refresh_btn1
+            // 
+            this.Refresh_btn1.FlatAppearance.BorderSize = 0;
+            this.Refresh_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Refresh_btn1.Image = global::BanHang.Properties.Resources.refresh;
+            this.Refresh_btn1.Location = new System.Drawing.Point(6, 3);
+            this.Refresh_btn1.Name = "Refresh_btn1";
+            this.Refresh_btn1.Size = new System.Drawing.Size(70, 70);
+            this.Refresh_btn1.TabIndex = 1;
+            this.Refresh_btn1.UseVisualStyleBackColor = true;
+            this.Refresh_btn1.Click += new System.EventHandler(this.Refresh_btn1_Click);
             // 
             // panel4
             // 
@@ -214,6 +220,7 @@
             this.Cancel_btn1.TabIndex = 15;
             this.Cancel_btn1.Text = "Cancel";
             this.Cancel_btn1.UseVisualStyleBackColor = true;
+            this.Cancel_btn1.Click += new System.EventHandler(this.Cancel_btn1_Click);
             // 
             // Optionitem_btn1
             // 
@@ -225,27 +232,72 @@
             this.Optionitem_btn1.UseVisualStyleBackColor = true;
             this.Optionitem_btn1.Click += new System.EventHandler(this.Optionitem_btn1_Click);
             // 
-            // infohang_pn
+            // pictureBox1
             // 
-            this.infohang_pn.Controls.Add(this.macongty_cbb1);
-            this.infohang_pn.Controls.Add(this.Close_infohang_btn);
-            this.infohang_pn.Controls.Add(this.giahang_tb);
-            this.infohang_pn.Controls.Add(this.donvitinh_tb);
-            this.infohang_pn.Controls.Add(this.soluong_tb);
-            this.infohang_pn.Controls.Add(this.maloaihang_tb);
-            this.infohang_pn.Controls.Add(this.mahang_tb);
-            this.infohang_pn.Controls.Add(this.tenhang_tb);
-            this.infohang_pn.Controls.Add(this.label7);
-            this.infohang_pn.Controls.Add(this.label6);
-            this.infohang_pn.Controls.Add(this.label5);
-            this.infohang_pn.Controls.Add(this.label4);
-            this.infohang_pn.Controls.Add(this.label3);
-            this.infohang_pn.Controls.Add(this.label2);
-            this.infohang_pn.Controls.Add(this.label1);
-            this.infohang_pn.Location = new System.Drawing.Point(6, 83);
-            this.infohang_pn.Name = "infohang_pn";
-            this.infohang_pn.Size = new System.Drawing.Size(398, 530);
-            this.infohang_pn.TabIndex = 7;
+            this.pictureBox1.Image = global::BanHang.Properties.Resources.nyan_cat_0__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 201);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Delete_btn1
+            // 
+            this.Delete_btn1.FlatAppearance.BorderSize = 0;
+            this.Delete_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete_btn1.Image = global::BanHang.Properties.Resources.delete;
+            this.Delete_btn1.Location = new System.Drawing.Point(1503, 6);
+            this.Delete_btn1.Name = "Delete_btn1";
+            this.Delete_btn1.Size = new System.Drawing.Size(70, 70);
+            this.Delete_btn1.TabIndex = 13;
+            this.Delete_btn1.UseVisualStyleBackColor = true;
+            this.Delete_btn1.Click += new System.EventHandler(this.Delete_btn1_Click);
+            // 
+            // Modify_btn1
+            // 
+            this.Modify_btn1.FlatAppearance.BorderSize = 0;
+            this.Modify_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Modify_btn1.Image = global::BanHang.Properties.Resources.modify;
+            this.Modify_btn1.Location = new System.Drawing.Point(1413, 7);
+            this.Modify_btn1.Name = "Modify_btn1";
+            this.Modify_btn1.Size = new System.Drawing.Size(70, 70);
+            this.Modify_btn1.TabIndex = 12;
+            this.Modify_btn1.UseVisualStyleBackColor = true;
+            this.Modify_btn1.Click += new System.EventHandler(this.Modify_btn1_Click);
+            // 
+            // Add_btn1
+            // 
+            this.Add_btn1.FlatAppearance.BorderSize = 0;
+            this.Add_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add_btn1.Image = global::BanHang.Properties.Resources.zyro_image__1_;
+            this.Add_btn1.Location = new System.Drawing.Point(1323, 7);
+            this.Add_btn1.Name = "Add_btn1";
+            this.Add_btn1.Size = new System.Drawing.Size(70, 70);
+            this.Add_btn1.TabIndex = 11;
+            this.Add_btn1.UseVisualStyleBackColor = true;
+            this.Add_btn1.Click += new System.EventHandler(this.Add_btn1_Click);
+            // 
+            // infohanghoa_pn
+            // 
+            this.infohanghoa_pn.Controls.Add(this.Close_infohang_btn);
+            this.infohanghoa_pn.Controls.Add(this.giahang_tb);
+            this.infohanghoa_pn.Controls.Add(this.donvitinh_tb);
+            this.infohanghoa_pn.Controls.Add(this.soluong_tb);
+            this.infohanghoa_pn.Controls.Add(this.maloaihang_tb);
+            this.infohanghoa_pn.Controls.Add(this.macongty_tb);
+            this.infohanghoa_pn.Controls.Add(this.mahang_tb);
+            this.infohanghoa_pn.Controls.Add(this.tenhang_tb);
+            this.infohanghoa_pn.Controls.Add(this.label7);
+            this.infohanghoa_pn.Controls.Add(this.label6);
+            this.infohanghoa_pn.Controls.Add(this.label5);
+            this.infohanghoa_pn.Controls.Add(this.label4);
+            this.infohanghoa_pn.Controls.Add(this.label3);
+            this.infohanghoa_pn.Controls.Add(this.label2);
+            this.infohanghoa_pn.Controls.Add(this.label1);
+            this.infohanghoa_pn.Location = new System.Drawing.Point(6, 83);
+            this.infohanghoa_pn.Name = "infohanghoa_pn";
+            this.infohanghoa_pn.Size = new System.Drawing.Size(398, 530);
+            this.infohanghoa_pn.TabIndex = 7;
             // 
             // Close_infohang_btn
             // 
@@ -301,7 +353,7 @@
             // 
             this.macongty_tb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.macongty_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.macongty_tb.Location = new System.Drawing.Point(575, 348);
+            this.macongty_tb.Location = new System.Drawing.Point(202, 265);
             this.macongty_tb.Name = "macongty_tb";
             this.macongty_tb.Size = new System.Drawing.Size(179, 28);
             this.macongty_tb.TabIndex = 15;
@@ -395,6 +447,17 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Mã Hàng";
             // 
+            // Search_btn1
+            // 
+            this.Search_btn1.FlatAppearance.BorderSize = 0;
+            this.Search_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Search_btn1.Image = global::BanHang.Properties.Resources.search;
+            this.Search_btn1.Location = new System.Drawing.Point(920, 16);
+            this.Search_btn1.Name = "Search_btn1";
+            this.Search_btn1.Size = new System.Drawing.Size(50, 50);
+            this.Search_btn1.TabIndex = 2;
+            this.Search_btn1.UseVisualStyleBackColor = true;
+            // 
             // Search_tb
             // 
             this.Search_tb.Location = new System.Drawing.Point(410, 16);
@@ -418,8 +481,8 @@
             // GiaoDich
             // 
             this.GiaoDich.Controls.Add(this.button1);
-            this.GiaoDich.Controls.Add(this.panel1);
-            this.GiaoDich.Controls.Add(this.dataGridView1);
+            this.GiaoDich.Controls.Add(this.infogiaodich_pn);
+            this.GiaoDich.Controls.Add(this.GiaoDich_table);
             this.GiaoDich.Controls.Add(this.button4);
             this.GiaoDich.Controls.Add(this.richTextBox1);
             this.GiaoDich.Controls.Add(this.button3);
@@ -431,27 +494,34 @@
             this.GiaoDich.Text = "     Giao Dịch     ";
             this.GiaoDich.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // button1
             // 
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.richTextBox2);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Location = new System.Drawing.Point(4, 86);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(398, 530);
-            this.panel1.TabIndex = 9;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::BanHang.Properties.Resources.zyro_image__1_;
+            this.button1.Location = new System.Drawing.Point(1334, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(70, 70);
+            this.button1.TabIndex = 10;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // infogiaodich_pn
+            // 
+            this.infogiaodich_pn.Controls.Add(this.button5);
+            this.infogiaodich_pn.Controls.Add(this.mucgiamgia_tb2);
+            this.infogiaodich_pn.Controls.Add(this.soluong_tb2);
+            this.infogiaodich_pn.Controls.Add(this.giaban_tb2);
+            this.infogiaodich_pn.Controls.Add(this.mahang_tb2);
+            this.infogiaodich_pn.Controls.Add(this.sohoadon_tb2);
+            this.infogiaodich_pn.Controls.Add(this.mucgiamgia_lb2);
+            this.infogiaodich_pn.Controls.Add(this.soluong_lb2);
+            this.infogiaodich_pn.Controls.Add(this.giaban_lb2);
+            this.infogiaodich_pn.Controls.Add(this.mahang_lb2);
+            this.infogiaodich_pn.Controls.Add(this.Sohoadon_lb2);
+            this.infogiaodich_pn.Location = new System.Drawing.Point(4, 86);
+            this.infogiaodich_pn.Name = "infogiaodich_pn";
+            this.infogiaodich_pn.Size = new System.Drawing.Size(398, 530);
+            this.infogiaodich_pn.TabIndex = 9;
             // 
             // button5
             // 
@@ -466,150 +536,112 @@
             this.button5.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // mucgiamgia_tb2
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(202, 453);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 28);
-            this.textBox1.TabIndex = 19;
+            this.mucgiamgia_tb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mucgiamgia_tb2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mucgiamgia_tb2.Location = new System.Drawing.Point(202, 250);
+            this.mucgiamgia_tb2.Name = "mucgiamgia_tb2";
+            this.mucgiamgia_tb2.Size = new System.Drawing.Size(179, 28);
+            this.mucgiamgia_tb2.TabIndex = 18;
             // 
-            // textBox2
+            // soluong_tb2
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(202, 406);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 28);
-            this.textBox2.TabIndex = 18;
+            this.soluong_tb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.soluong_tb2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.soluong_tb2.Location = new System.Drawing.Point(202, 203);
+            this.soluong_tb2.Name = "soluong_tb2";
+            this.soluong_tb2.Size = new System.Drawing.Size(179, 28);
+            this.soluong_tb2.TabIndex = 17;
             // 
-            // textBox3
+            // giaban_tb2
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(202, 359);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 28);
-            this.textBox3.TabIndex = 17;
+            this.giaban_tb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.giaban_tb2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.giaban_tb2.Location = new System.Drawing.Point(202, 156);
+            this.giaban_tb2.Name = "giaban_tb2";
+            this.giaban_tb2.Size = new System.Drawing.Size(179, 28);
+            this.giaban_tb2.TabIndex = 16;
             // 
-            // textBox4
+            // mahang_tb2
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(202, 312);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(179, 28);
-            this.textBox4.TabIndex = 16;
+            this.mahang_tb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mahang_tb2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mahang_tb2.Location = new System.Drawing.Point(202, 109);
+            this.mahang_tb2.Name = "mahang_tb2";
+            this.mahang_tb2.Size = new System.Drawing.Size(179, 28);
+            this.mahang_tb2.TabIndex = 15;
             // 
-            // textBox5
+            // sohoadon_tb2
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(202, 265);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(179, 28);
-            this.textBox5.TabIndex = 15;
+            this.sohoadon_tb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.sohoadon_tb2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.sohoadon_tb2.Location = new System.Drawing.Point(202, 60);
+            this.sohoadon_tb2.Name = "sohoadon_tb2";
+            this.sohoadon_tb2.Size = new System.Drawing.Size(179, 28);
+            this.sohoadon_tb2.TabIndex = 8;
             // 
-            // textBox6
+            // mucgiamgia_lb2
             // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(202, 60);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(179, 28);
-            this.textBox6.TabIndex = 8;
+            this.mucgiamgia_lb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mucgiamgia_lb2.AutoSize = true;
+            this.mucgiamgia_lb2.Location = new System.Drawing.Point(14, 249);
+            this.mucgiamgia_lb2.Name = "mucgiamgia_lb2";
+            this.mucgiamgia_lb2.Size = new System.Drawing.Size(176, 29);
+            this.mucgiamgia_lb2.TabIndex = 13;
+            this.mucgiamgia_lb2.Text = "Mức Giảm Giá";
             // 
-            // richTextBox2
+            // soluong_lb2
             // 
-            this.richTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Location = new System.Drawing.Point(19, 145);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(362, 83);
-            this.richTextBox2.TabIndex = 8;
-            this.richTextBox2.Text = "";
+            this.soluong_lb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.soluong_lb2.AutoSize = true;
+            this.soluong_lb2.Location = new System.Drawing.Point(14, 202);
+            this.soluong_lb2.Name = "soluong_lb2";
+            this.soluong_lb2.Size = new System.Drawing.Size(124, 29);
+            this.soluong_lb2.TabIndex = 12;
+            this.soluong_lb2.Text = "Số Lượng";
             // 
-            // label8
+            // giaban_lb2
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(14, 452);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(121, 29);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Giá Hàng";
+            this.giaban_lb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.giaban_lb2.AutoSize = true;
+            this.giaban_lb2.Location = new System.Drawing.Point(14, 155);
+            this.giaban_lb2.Name = "giaban_lb2";
+            this.giaban_lb2.Size = new System.Drawing.Size(105, 29);
+            this.giaban_lb2.TabIndex = 11;
+            this.giaban_lb2.Text = "Giá Bán";
             // 
-            // label9
+            // mahang_lb2
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(14, 405);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(135, 29);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "Đơn vị tính";
+            this.mahang_lb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mahang_lb2.AutoSize = true;
+            this.mahang_lb2.Location = new System.Drawing.Point(14, 108);
+            this.mahang_lb2.Name = "mahang_lb2";
+            this.mahang_lb2.Size = new System.Drawing.Size(116, 29);
+            this.mahang_lb2.TabIndex = 10;
+            this.mahang_lb2.Text = "Mã Hàng";
             // 
-            // label10
+            // Sohoadon_lb2
             // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(14, 358);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(124, 29);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "Số Lượng";
+            this.Sohoadon_lb2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Sohoadon_lb2.AutoSize = true;
+            this.Sohoadon_lb2.Location = new System.Drawing.Point(14, 59);
+            this.Sohoadon_lb2.Name = "Sohoadon_lb2";
+            this.Sohoadon_lb2.Size = new System.Drawing.Size(153, 29);
+            this.Sohoadon_lb2.TabIndex = 8;
+            this.Sohoadon_lb2.Text = "Số Hoá Đơn";
             // 
-            // label11
+            // GiaoDich_table
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(14, 311);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(173, 29);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Mã Loại Hàng";
-            // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(14, 264);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(153, 29);
-            this.label12.TabIndex = 10;
-            this.label12.Text = "Mã Công Ty";
-            // 
-            // label13
-            // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(14, 103);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(127, 29);
-            this.label13.TabIndex = 9;
-            this.label13.Text = "Tên Hàng";
-            // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(14, 59);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(116, 29);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "Mã Hàng";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(408, 86);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1303, 734);
-            this.dataGridView1.TabIndex = 8;
+            this.GiaoDich_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GiaoDich_table.GridColor = System.Drawing.Color.White;
+            this.GiaoDich_table.Location = new System.Drawing.Point(408, 86);
+            this.GiaoDich_table.Name = "GiaoDich_table";
+            this.GiaoDich_table.RowHeadersWidth = 62;
+            this.GiaoDich_table.RowTemplate.Height = 28;
+            this.GiaoDich_table.Size = new System.Drawing.Size(1303, 734);
+            this.GiaoDich_table.TabIndex = 8;
+            this.GiaoDich_table.SelectionChanged += new System.EventHandler(this.GiaoDich_table_SelectionChanged);
             // 
             // button4
             // 
@@ -627,6 +659,28 @@
             this.richTextBox1.Size = new System.Drawing.Size(490, 50);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = global::BanHang.Properties.Resources.delete;
+            this.button3.Location = new System.Drawing.Point(1500, 10);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(70, 70);
+            this.button3.TabIndex = 2;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = global::BanHang.Properties.Resources.modify;
+            this.button2.Location = new System.Drawing.Point(1417, 10);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(70, 70);
+            this.button2.TabIndex = 1;
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // DoiTac
             // 
@@ -905,6 +959,7 @@
             this.panel3.Controls.Add(this.label26);
             this.panel3.Controls.Add(this.label27);
             this.panel3.Controls.Add(this.label28);
+            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(4, 82);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(398, 530);
@@ -929,7 +984,7 @@
             this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox13.Location = new System.Drawing.Point(202, 453);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(179, 19);
+            this.textBox13.Size = new System.Drawing.Size(179, 28);
             this.textBox13.TabIndex = 19;
             // 
             // textBox14
@@ -938,7 +993,7 @@
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox14.Location = new System.Drawing.Point(202, 406);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(179, 19);
+            this.textBox14.Size = new System.Drawing.Size(179, 28);
             this.textBox14.TabIndex = 18;
             // 
             // textBox15
@@ -947,7 +1002,7 @@
             this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox15.Location = new System.Drawing.Point(202, 359);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(179, 19);
+            this.textBox15.Size = new System.Drawing.Size(179, 28);
             this.textBox15.TabIndex = 17;
             // 
             // textBox16
@@ -956,7 +1011,7 @@
             this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox16.Location = new System.Drawing.Point(202, 312);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(179, 19);
+            this.textBox16.Size = new System.Drawing.Size(179, 28);
             this.textBox16.TabIndex = 16;
             // 
             // textBox17
@@ -965,7 +1020,7 @@
             this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox17.Location = new System.Drawing.Point(202, 265);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(179, 19);
+            this.textBox17.Size = new System.Drawing.Size(179, 28);
             this.textBox17.TabIndex = 15;
             // 
             // textBox18
@@ -974,7 +1029,7 @@
             this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox18.Location = new System.Drawing.Point(202, 60);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(179, 19);
+            this.textBox18.Size = new System.Drawing.Size(179, 28);
             this.textBox18.TabIndex = 8;
             // 
             // richTextBox5
@@ -993,7 +1048,7 @@
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(14, 452);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(77, 20);
+            this.label22.Size = new System.Drawing.Size(121, 29);
             this.label22.TabIndex = 14;
             this.label22.Text = "Giá Hàng";
             // 
@@ -1003,7 +1058,7 @@
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(14, 405);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(83, 20);
+            this.label23.Size = new System.Drawing.Size(135, 29);
             this.label23.TabIndex = 13;
             this.label23.Text = "Đơn vị tính";
             // 
@@ -1013,7 +1068,7 @@
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(14, 358);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(78, 20);
+            this.label24.Size = new System.Drawing.Size(124, 29);
             this.label24.TabIndex = 12;
             this.label24.Text = "Số Lượng";
             // 
@@ -1023,7 +1078,7 @@
             this.label25.AutoSize = true;
             this.label25.Location = new System.Drawing.Point(14, 311);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(108, 20);
+            this.label25.Size = new System.Drawing.Size(173, 29);
             this.label25.TabIndex = 11;
             this.label25.Text = "Mã Loại Hàng";
             // 
@@ -1033,7 +1088,7 @@
             this.label26.AutoSize = true;
             this.label26.Location = new System.Drawing.Point(14, 264);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(93, 20);
+            this.label26.Size = new System.Drawing.Size(153, 29);
             this.label26.TabIndex = 10;
             this.label26.Text = "Mã Công Ty";
             // 
@@ -1043,7 +1098,7 @@
             this.label27.AutoSize = true;
             this.label27.Location = new System.Drawing.Point(14, 103);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(79, 20);
+            this.label27.Size = new System.Drawing.Size(127, 29);
             this.label27.TabIndex = 9;
             this.label27.Text = "Tên Hàng";
             // 
@@ -1053,7 +1108,7 @@
             this.label28.AutoSize = true;
             this.label28.Location = new System.Drawing.Point(14, 59);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(74, 20);
+            this.label28.Size = new System.Drawing.Size(116, 29);
             this.label28.TabIndex = 8;
             this.label28.Text = "Mã Hàng";
             // 
@@ -1148,114 +1203,6 @@
             this.Container.Size = new System.Drawing.Size(1745, 927);
             this.Container.TabIndex = 1;
             // 
-            // Refresh_btn1
-            // 
-            this.Refresh_btn1.FlatAppearance.BorderSize = 0;
-            this.Refresh_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Refresh_btn1.Image = global::BanHang.Properties.Resources.refresh;
-            this.Refresh_btn1.Location = new System.Drawing.Point(6, 3);
-            this.Refresh_btn1.Name = "Refresh_btn1";
-            this.Refresh_btn1.Size = new System.Drawing.Size(70, 70);
-            this.Refresh_btn1.TabIndex = 1;
-            this.Refresh_btn1.UseVisualStyleBackColor = true;
-            this.Refresh_btn1.Click += new System.EventHandler(this.Refresh_btn1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BanHang.Properties.Resources.nyan_cat_0__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 201);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Delete_btn1
-            // 
-            this.Delete_btn1.FlatAppearance.BorderSize = 0;
-            this.Delete_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete_btn1.Image = global::BanHang.Properties.Resources.delete;
-            this.Delete_btn1.Location = new System.Drawing.Point(1503, 6);
-            this.Delete_btn1.Name = "Delete_btn1";
-            this.Delete_btn1.Size = new System.Drawing.Size(70, 70);
-            this.Delete_btn1.TabIndex = 13;
-            this.Delete_btn1.UseVisualStyleBackColor = true;
-            // 
-            // Modify_btn1
-            // 
-            this.Modify_btn1.FlatAppearance.BorderSize = 0;
-            this.Modify_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Modify_btn1.Image = global::BanHang.Properties.Resources.modify;
-            this.Modify_btn1.Location = new System.Drawing.Point(1413, 7);
-            this.Modify_btn1.Name = "Modify_btn1";
-            this.Modify_btn1.Size = new System.Drawing.Size(70, 70);
-            this.Modify_btn1.TabIndex = 12;
-            this.Modify_btn1.UseVisualStyleBackColor = true;
-            this.Modify_btn1.Click += new System.EventHandler(this.Modify_btn1_Click);
-            // 
-            // Add_btn1
-            // 
-            this.Add_btn1.FlatAppearance.BorderSize = 0;
-            this.Add_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add_btn1.Image = global::BanHang.Properties.Resources.zyro_image__1_;
-            this.Add_btn1.Location = new System.Drawing.Point(1323, 7);
-            this.Add_btn1.Name = "Add_btn1";
-            this.Add_btn1.Size = new System.Drawing.Size(70, 70);
-            this.Add_btn1.TabIndex = 11;
-            this.Add_btn1.UseVisualStyleBackColor = true;
-            this.Add_btn1.Click += new System.EventHandler(this.Add_btn1_Click);
-            // 
-            // Search_btn1
-            // 
-            this.Search_btn1.FlatAppearance.BorderSize = 0;
-            this.Search_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Search_btn1.Image = global::BanHang.Properties.Resources.search;
-            this.Search_btn1.Location = new System.Drawing.Point(920, 16);
-            this.Search_btn1.Name = "Search_btn1";
-            this.Search_btn1.Size = new System.Drawing.Size(50, 50);
-            this.Search_btn1.TabIndex = 2;
-            this.Search_btn1.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::BanHang.Properties.Resources.zyro_image__1_;
-            this.button1.Location = new System.Drawing.Point(1334, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 70);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = global::BanHang.Properties.Resources.delete;
-            this.button3.Location = new System.Drawing.Point(1500, 10);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(70, 70);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::BanHang.Properties.Resources.modify;
-            this.button2.Location = new System.Drawing.Point(1417, 10);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 70);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // macongty_cbb1
-            // 
-            this.macongty_cbb1.FormattingEnabled = true;
-            this.macongty_cbb1.Location = new System.Drawing.Point(202, 264);
-            this.macongty_cbb1.Name = "macongty_cbb1";
-            this.macongty_cbb1.Size = new System.Drawing.Size(179, 37);
-            this.macongty_cbb1.TabIndex = 16;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1271,15 +1218,15 @@
             this.Load += new System.EventHandler(this.MainLoad);
             this.MainTab.ResumeLayout(false);
             this.HangHoa.ResumeLayout(false);
-            this.HangHoa.PerformLayout();
             this.panel4.ResumeLayout(false);
-            this.infohang_pn.ResumeLayout(false);
-            this.infohang_pn.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.infohanghoa_pn.ResumeLayout(false);
+            this.infohanghoa_pn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HangHoa_table)).EndInit();
             this.GiaoDich.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.infogiaodich_pn.ResumeLayout(false);
+            this.infogiaodich_pn.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GiaoDich_table)).EndInit();
             this.DoiTac.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -1289,7 +1236,6 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.Container.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1306,7 +1252,7 @@
         private System.Windows.Forms.RichTextBox Search_tb;
         private System.Windows.Forms.DataGridView HangHoa_table;
         private System.Windows.Forms.Button Search_btn1;
-        private System.Windows.Forms.Panel infohang_pn;
+        private System.Windows.Forms.Panel infohanghoa_pn;
         private System.Windows.Forms.RichTextBox tenhang_tb;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -1331,23 +1277,19 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel infogiaodich_pn;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox mucgiamgia_tb2;
+        private System.Windows.Forms.TextBox soluong_tb2;
+        private System.Windows.Forms.TextBox giaban_tb2;
+        private System.Windows.Forms.TextBox mahang_tb2;
+        private System.Windows.Forms.TextBox sohoadon_tb2;
+        private System.Windows.Forms.Label mucgiamgia_lb2;
+        private System.Windows.Forms.Label soluong_lb2;
+        private System.Windows.Forms.Label giaban_lb2;
+        private System.Windows.Forms.Label mahang_lb2;
+        private System.Windows.Forms.Label Sohoadon_lb2;
+        private System.Windows.Forms.DataGridView GiaoDich_table;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox textBox7;
@@ -1396,6 +1338,5 @@
         private System.Windows.Forms.Button Cancel_btn1;
         private System.Windows.Forms.Button Optionitem_btn1;
         private System.Windows.Forms.Button Refresh_btn1;
-        private System.Windows.Forms.ComboBox macongty_cbb1;
     }
 }
