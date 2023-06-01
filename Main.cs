@@ -24,6 +24,9 @@ namespace BanHang
             infohanghoa_pn.Visible = false;
             Optionitem_btn1.Visible = false;
             Cancel_btn1.Visible = false;
+            infogiaodich_pn.Visible = false;
+            Optionitem_btn2.Visible = false;
+            Cancel_btn2.Visible = false;
             string connectionString = "Server=StOrmeR;Database=Banhang;Trusted_Connection=True;";
             string query = "Select mahang as [Mã hàng], tenhang as [Tên hàng], macongty as [Mã công ty], maloaihang as [Mã loại hàng],\r\nsoluong as [Số lượng], donvitinh as [Đơn vị tính], giahang as [Giá hàng] from MATHANG";
 
@@ -54,6 +57,23 @@ namespace BanHang
                     dataAdapter.Fill(dataTable);
 
                     GiaoDich_table.DataSource = dataTable;
+                }
+            }
+
+            string query4 = "Select manhanvien as [Mã nhân viên], ho as [Họ], ten as [Tên], ngaysinh as [Ngày sinh], ngaylamviec as [Ngày làm việc], " +
+                "diachi as [Địa chỉ], dienthoai as [Điện thoại], luongcoban as [Lương cơ bản], phucap as [Phụ cấp] from NHANVIEN";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand(query4, connection))
+                {
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
+                    dataAdapter.Fill(dataTable);
+
+                    NhanVien_table.DataSource = dataTable;
                 }
             }
         }
@@ -221,9 +241,26 @@ namespace BanHang
 
         private void Delete_btn1_Click(object sender, EventArgs e)
         {
+            if (HangHoa_table.SelectedRows.Count > 0)
+            {
+                // Get the index of the selected row
+                int rowIndex = HangHoa_table.SelectedRows[0].Index;
 
+                // Get the primary key value from the selected row
+                string primaryKeyValue = HangHoa_table.Rows[rowIndex].Cells["Mã hàng"].Value.ToString();
+
+                // Delete the corresponding data from the database
+                DeleteDataFromDatabase1(primaryKeyValue);
+
+                // Remove the selected row from the DataGridView
+                HangHoa_table.Rows.RemoveAt(rowIndex);
+            }
+            else
+            {
+                MessageBox.Show("Please select a row in the DataGridView.");
+            }
         }
-        private void DeleteDataFromDatabase(string primaryKeyValue)
+        private void DeleteDataFromDatabase1(string primaryKeyValue)
         {
             string connectionString = "Server=StOrmeR;Database=Banhang;Trusted_Connection=True;";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -264,6 +301,201 @@ namespace BanHang
                 giaban_tb2.Text = giaban;
                 soluong_tb2.Text = soluong;
                 mucgiamgia_tb2.Text = mucgiamgia;
+            }
+        }
+
+        private void Search_btn1_Click(object sender, EventArgs e)
+        {
+            string searchtext = Search_tb1.Text;
+            string connectionString = "Server=StOrmeR;Database=Banhang;Trusted_Connection=True;";
+            string query = "Select mahang as [Mã hàng], tenhang as [Tên hàng], macongty as [Mã công ty], maloaihang as [Mã loại hàng],\r\nsoluong as [Số lượng], donvitinh as [Đơn vị tính], giahang as [Giá hàng] from MATHANG" +
+                "where mahang = " + $"'{searchtext}'";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
+                    dataAdapter.Fill(dataTable);
+
+                    HangHoa_table.DataSource = dataTable;
+                }
+            }
+        }
+
+        private void Add_btn2_click(object sender, EventArgs e)
+        {
+            Optionitem_btn2.Visible = true;
+            Optionitem_btn2.Text = "Add";
+            Cancel_btn1.Visible = true;
+        }
+
+        private void Modify_btn2_Click(object sender, EventArgs e)
+        {
+            Optionitem_btn2.Visible = true;
+            Optionitem_btn2.Text = "Modify";
+            Cancel_btn1.Visible = true;
+        }
+
+        private void Optionitem_btn2_Click(object sender, EventArgs e)
+        {
+            if (Optionitem_btn2.Text == "Add")
+            {
+                string connectionString = "Server=StOrmeR;Database=Banhang;Trusted_Connection=True;";
+                string sohoadon = sohoadon_tb2.Text;
+                string mahang = mahang_tb2.Text;
+                int giaban = int.Parse(giaban_tb2.Text);
+                string soluong = soluong_tb2.Text;
+                int mucgiamgia = int.Parse(mucgiamgia_tb2.Text);
+
+                string query = $"INSERT INTO CHITIETDATHANG (sohoadon, mahang, giaban, soluong, mucgiamgia) VALUES " +
+                    $"('{sohoadon}', '{mahang}', '{giaban}', '{soluong}', {mucgiamgia})";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.ExecuteNonQuery();
+
+                    }
+                }
+            }
+            else if (Optionitem_btn2.Text == "Modify")
+            {
+                if (GiaoDich_table.SelectedRows.Count > 0)
+                {
+                    // Check if the input elements have data
+                    if (!string.IsNullOrEmpty(sohoadon_tb2.Text))
+                    {
+                        // Get the index of the selected row
+                        int rowIndex = GiaoDich_table.SelectedRows[0].Index;
+
+                        // Retrieve the values from the input elements
+                        string sohoadon = sohoadon_tb2.Text;
+                        string mahang = mahang_tb2.Text;
+                        int giaban = int.Parse(giaban_tb2.Text);
+                        string soluong = soluong_tb2.Text;
+                        int mucgiamgia = int.Parse(mucgiamgia_tb2.Text);
+
+                        // Update the corresponding values in the selected row
+                        GiaoDich_table.Rows[rowIndex].Cells["Số hoá đơn"].Value = sohoadon;
+                        GiaoDich_table.Rows[rowIndex].Cells["Mã hàng"].Value = mahang;
+                        GiaoDich_table.Rows[rowIndex].Cells["Giá bán"].Value = giaban;
+                        GiaoDich_table.Rows[rowIndex].Cells["Số lượng"].Value = soluong;
+                        GiaoDich_table.Rows[rowIndex].Cells["Mức giảm giá"].Value = mucgiamgia;
+
+                        // Clear the input fields
+                        sohoadon_tb2.Text = "";
+                        mahang_tb2.Text = "";
+                        giaban_tb2.Text = "";
+                        soluong_tb2.Text = "";
+                        mucgiamgia_tb2.Text = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please enter all the required information.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please select a row in the DataGridView.");
+                }
+            }
+        }
+
+        private void Delete_btn2_Click(object sender, EventArgs e)
+        {
+            if (GiaoDich_table.SelectedRows.Count > 0)
+            {
+                // Get the index of the selected row
+                int rowIndex = GiaoDich_table.SelectedRows[0].Index;
+
+                // Get the primary key value from the selected row
+                string primaryKeyValue = GiaoDich_table.Rows[rowIndex].Cells["Số hoá đơn"].Value.ToString();
+
+                // Delete the corresponding data from the database
+                DeleteDataFromDatabase2(primaryKeyValue);
+
+                // Remove the selected row from the DataGridView
+                GiaoDich_table.Rows.RemoveAt(rowIndex);
+            }
+            else
+            {
+                MessageBox.Show("Please select a row in the DataGridView.");
+            }
+        }
+
+        private void DeleteDataFromDatabase2(string primaryKeyValue)
+        {
+            string connectionString = "Server=StOrmeR;Database=Banhang;Trusted_Connection=True;";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // Open the connection
+                connection.Open();
+
+                // Create a SQL command to delete the row with the specified primary key
+                string sql = "DELETE FROM CHITIETMATHANG WHERE sohoadon = @PrimaryKeyValue";
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    // Set the value of the primary key parameter
+                    command.Parameters.AddWithValue("@PrimaryKeyValue", primaryKeyValue);
+
+                    // Execute the SQL command
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        private void Cancel_btn2_Click(object sender, EventArgs e)
+        {
+            sohoadon_tb2.Text = "";
+            mahang_tb2.Text = "";
+            giaban_tb2.Text = "";
+            soluong_tb2.Text = "";
+            mucgiamgia_tb2.Text = "";
+            infogiaodich_pn.Visible = false;
+            Optionitem_btn2.Visible = false;
+            Cancel_btn2.Visible = false;
+        }
+
+        private void Close_btn2_Click(object sender, EventArgs e)
+        {
+            infogiaodich_pn.Visible = false;
+        }
+
+        private void NhanVien_table_SelectionChanged(object sender, EventArgs e)
+        {
+            if (NhanVien_table.SelectedRows.Count > 0)
+            {
+                infonhanvien_pn.Visible = true;
+                DataGridViewRow selectedRow = NhanVien_table.SelectedRows[0];
+
+                // Get the values from the selected row
+                string manhanvien = selectedRow.Cells["Mã nhân viên"].Value.ToString();
+                string ho = selectedRow.Cells["Họ"].Value.ToString();
+                string ten = selectedRow.Cells["Tên"].Value.ToString();
+                DateTime ngaysinh = (DateTime)selectedRow.Cells["Ngày sinh"].Value;
+                DateTime ngaylamviec = (DateTime)selectedRow.Cells["Ngày làm việc"].Value;
+                string diachi = selectedRow.Cells["Địa chỉ"].Value.ToString();
+                string dienthoai = selectedRow.Cells["Điện thoại"].Value.ToString();
+                string luongcoban = selectedRow.Cells["Lương cơ bản"].Value.ToString();
+                string phucap = selectedRow.Cells["Phụ cấp"].Value.ToString();
+
+                // Update the textboxes with the values
+                manhanvien_tb4.Text = manhanvien;
+                ho_tb4.Text = ho;
+                ten_tb4.Text = ten;
+                ngaysinh_dtp.Value = ngaysinh;
+                ngaylamviec_dtp.Value = ngaylamviec;
+                diachi_tb4.Text = diachi;
+                dienthoai_tb4.Text = dienthoai;
+                luongcoban_tb4.Text = luongcoban;
+                phucap_tb4.Text = phucap;
             }
         }
     }
